@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/rmct_record_item_lbl_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="名称"
+            android:textColor="@color/rmct_record_text_color"
+            android:textSize="@dimen/rmct_record_text_size" />
+
+        <TextView
+            android:id="@+id/rmct_record_item_lbl_flag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center_horizontal"
+            android:text="状态"
+            android:textColor="@color/rmct_record_text_color"
+            android:textSize="@dimen/rmct_record_text_size" />
+
+        <TextView
+            android:id="@+id/rmct_record_item_lbl_divide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/rmct_record_item_lbl_flag"
+            android:text="，"
+            android:textColor="@color/rmct_record_text_color"
+            android:textSize="@dimen/rmct_record_text_size" />
+
+        <TextView
+            android:id="@+id/rmct_record_item_lbl_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/rmct_record_item_lbl_divide"
+            android:text="时间"
+            android:textColor="@color/rmct_record_text_color" />
+    </RelativeLayout>
+
+</LinearLayout>

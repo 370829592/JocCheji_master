@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/layout_margin_size"
+            android:background="@drawable/dialog_bg"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/layout_margin_size"
+            android:paddingRight="@dimen/layout_margin_size"
+            android:paddingTop="@dimen/layout_margin_size" >
+
+            <TextView
+                android:id="@+id/info_record_picker_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/info_ssdata_record_date"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <DatePicker
+                android:id="@+id/info_record_picker_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dip" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/info_record_picker_cancel"
+                    android:layout_width="126px"
+                    android:layout_height="66px"
+                    android:layout_margin="5px"
+                    android:background="@drawable/btn_black"
+                    android:text="@string/datetime_picker_cancel"
+                    android:textColor="@android:color/white" />
+
+                <Button
+                    android:id="@+id/info_record_picker_submit"
+                    android:layout_width="126px"
+                    android:layout_height="66px"
+                    android:layout_margin="5px"
+                    android:background="@drawable/btn_black"
+                    android:text="@string/datetime_picker_submit"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/info_record_picker_close"
+            android:layout_width="45px"
+            android:layout_height="45px"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/btn_close" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,98 @@
+ <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="67px"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/doc_dcxsjl_item_bg"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/info_ssdata_record_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20px"
+            android:gravity="left|center_vertical"
+            android:text="0000.00.00"
+            android:textSize="18dip" />
+
+        <LinearLayout
+            android:id="@+id/info_ssdata_record_calendar_layout"
+            android:layout_width="55px"
+            android:layout_height="47px"
+            android:layout_gravity="center"
+            android:layout_marginLeft="7px"
+            android:background="@drawable/info_ssdata_record_calendar"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/info_ssdata_record_calendar_month"
+                android:layout_width="wrap_content"
+                android:layout_height="10px"
+                android:layout_gravity="left"
+                android:layout_marginLeft="18px"
+                android:layout_marginTop="8px"
+                android:gravity="center"
+                android:text="四"
+                android:textColor="#FFF"
+                android:textSize="6px"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/info_ssdata_record_calendar_date"
+                android:layout_width="wrap_content"
+                android:layout_height="20px"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="8px"
+                android:layout_marginTop="2px"
+                android:text="1"
+                android:textColor="#000"
+                android:textSize="16px"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/info_ssdata_delect_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="20sp"
+            android:background="@drawable/account_delete"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <!-- android:listSelector="@drawable/list_selector_record" -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/info_ssdata_record_none"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/info_ssdata_record_null"
+            android:visibility="gone" />
+
+        <ListView
+            android:id="@+id/info_ssdata_record_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="5dp"
+            android:cacheColorHint="@android:color/transparent"
+		    android:listSelector="#000000"        
+            android:scrollbars="none" />
+    </LinearLayout>
+
+</LinearLayout>

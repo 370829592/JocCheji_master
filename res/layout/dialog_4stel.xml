@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ff000000" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#ff000000"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/more_car_loginpassword_up_bg"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15px"
+                android:layout_marginTop="15px"
+                android:gravity="center"
+                android:text="4s电话设置为空，请输入指定4S店电话号码"
+                android:textColor="@android:color/black"
+                android:textSize="20px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/more_car_loginpassword_m_bg"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:text="@string/info_status_4s"
+                android:textColor="@android:color/black"
+                android:textSize="15dip" />
+
+            <EditText
+                android:id="@+id/dialog_4stel_number"
+                style="@style/single_line_text_box_pwd"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:ems="12"
+                android:gravity="center"
+                android:hint="@string/info_sstaus_4s_hint"
+                android:imeOptions="actionUnspecified|actionDone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/more_car_loginpassword_down_bg"
+            android:gravity="right"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/dialog_4stel_save"
+                android:layout_width="50sp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/btn_dialog_ok"
+                android:gravity="center" />
+
+            <Button
+                android:id="@+id/dialog_4stel_call"
+                android:layout_width="60sp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/btn_dialog_fs"
+                android:gravity="center" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginTop="5dp"
+    android:baselineAligned="false"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/info_ssdata_time_bc_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="3dp"
+        android:background="@drawable/info_ssdata_time_count_bg"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center_horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/info_ssdata_time_time_bg"
+                android:orientation="vertical" >
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/info_ssdata_time_bg" >
+
+                    <TextView
+                        android:id="@+id/info_ssdata_time_bc_num_hours"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="1dp"
+                        android:gravity="center"
+                        android:paddingLeft="2dp"
+                        android:paddingRight="2dp"
+                        android:text="@string/info_ssdata_time"
+                        android:textColor="@color/info_ssdata_time_bc_num" />
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/info_ssdata_time_bc_hours"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="0px"
+                    android:gravity="center"
+                    android:text="@string/info_ssdata_time_hour_unit"
+                    android:textColor="@color/info_ssdata_time_unit" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginTop="12dp"
+                android:text="@string/info_ssdata_time_split"
+                android:textColor="@color/info_ssdata_time_bc" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/info_ssdata_time_time_bg"
+                android:orientation="vertical" >
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/info_ssdata_time_bg" >
+
+                    <TextView
+                        android:id="@+id/info_ssdata_time_bc_num_mintues"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="1dp"
+                        android:gravity="center"
+                        android:paddingLeft="2dp"
+                        android:paddingRight="2dp"
+                        android:text="@string/info_ssdata_time"
+                        android:textColor="@color/info_ssdata_time_bc_num" />
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/info_ssdata_time_bc_mintues"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="0px"
+                    android:gravity="center"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:text="@string/info_ssdata_time_mintue_unit"
+                    android:textColor="@color/info_ssdata_time_unit" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/info_ssdata_time_count_splite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="1px"
+            android:layout_marginTop="1px"
+            android:gravity="center"
+            android:src="@drawable/info_ssdata_time_count_splite" />
+
+        <TextView
+            android:id="@+id/info_ssdata_time_bc_lbl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/info_ssdata_time_bc"
+          />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/info_ssdata_time_daily_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:background="@drawable/info_ssdata_time_count_bg"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/info_ssdata_time_time_bg"
+                android:orientation="vertical" >
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/info_ssdata_time_bg" >
+
+                    <TextView
+                        android:id="@+id/info_ssdata_time_daily_num_hours"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="1dp"
+                        android:gravity="center"
+                        android:paddingLeft="2dp"
+                        android:paddingRight="2dp"
+                        android:text="@string/info_ssdata_time"
+                        android:textColor="@color/info_ssdata_time_daily_num"/>
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/info_ssdata_time_daily_hours"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="0px"
+                    android:gravity="center"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:text="@string/info_ssdata_time_hour_unit"
+                    android:textColor="@color/info_ssdata_time_unit"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginTop="12dp"
+                android:text="@string/info_ssdata_time_split"
+                android:textColor="@color/info_ssdata_time_daily" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/info_ssdata_time_time_bg"
+                android:orientation="vertical" >
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/info_ssdata_time_bg" >
+
+                    <TextView
+                        android:id="@+id/info_ssdata_time_daily_num_mintues"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="1dp"
+                        android:gravity="center"
+                        android:paddingLeft="2dp"
+                        android:paddingRight="2dp"
+                        android:text="@string/info_ssdata_time"
+                        android:textColor="@color/info_ssdata_time_bc_num"/>
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/info_ssdata_time_daily_mintues"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="0px"
+                    android:gravity="center"
+                    android:text="@string/info_ssdata_time_mintue_unit"
+                    android:textColor="@color/info_ssdata_time_unit" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="1px"
+            android:layout_marginTop="1px"
+            android:gravity="center"
+            android:src="@drawable/info_ssdata_time_count_splite" />
+
+        <TextView
+            android:id="@+id/info_ssdata_time_daily_lbl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/info_ssdata_time_daily"
+          />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/info_ssdata_time_count_bg"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/info_ssdata_time_total_mintue_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/info_ssdata_time_time_bg"
+                android:orientation="vertical" >
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/info_ssdata_time_bg" >
+
+                    <TextView
+                        android:id="@+id/info_ssdata_time_total_num_mintues"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:paddingLeft="2dp"
+                        android:paddingRight="2dp"
+                        android:text="@string/info_ssdata_time"
+                        android:textColor="@color/info_ssdata_time_bc_num"/>
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/info_ssdata_time_total_mintues"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="0px"
+                    android:gravity="center"
+                    android:text="@string/info_ssdata_time_mintue_unit"
+                    android:textColor="@color/info_ssdata_time_unit"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/info_ssdata_time_total_splite_lbl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginTop="12dp"
+                android:layout_toLeftOf="@id/info_ssdata_time_total_mintue_layout"
+                android:gravity="center"
+                android:text="@string/info_ssdata_time_split"
+                android:textColor="@color/info_ssdata_time_total" />
+
+            <LinearLayout
+                android:id="@+id/info_ssdata_time_total_hour_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="10dp"
+                android:layout_toLeftOf="@id/info_ssdata_time_total_splite_lbl"
+                android:background="@drawable/info_ssdata_time_time_bg"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/info_ssdata_time_total_num_hours"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/info_ssdata_time_bg"
+                    android:gravity="center"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    android:singleLine="true"
+                    android:text="@string/info_ssdata_time_"
+                    android:textColor="@color/info_ssdata_time_total_num"/>
+
+                <TextView
+                    android:id="@+id/info_ssdata_time_total_hours"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="0px"
+                    android:gravity="center"
+                    android:text="@string/info_ssdata_time_hour_unit"
+                    android:textColor="@color/info_ssdata_time_unit" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="1px"
+            android:layout_marginTop="1px"
+            android:gravity="center"
+            android:src="@drawable/info_ssdata_time_count_splite" />
+
+        <TextView
+            android:id="@+id/info_ssdata_time_total_lbl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/info_ssdata_time_total"
+          />
+    </LinearLayout>
+
+</LinearLayout>

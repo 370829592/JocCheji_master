@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/init_xieyi_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/init_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp"
+            android:gravity="center"
+            android:text="金橙车管家使用协议"
+            android:textColor="@android:color/white"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+    <WebView
+        android:id="@+id/init_xieyi_webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15sp"
+        android:layout_marginRight="15sp"
+        android:layout_marginTop="5sp"
+        android:layout_weight="1"
+        android:background="@drawable/init_xieyi" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15sp"
+        android:layout_marginRight="15sp"
+        android:layout_marginTop="5sp"
+        android:layout_weight="1"
+        android:background="@drawable/init_xieyi"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="
+一、免责申明
+    金橙车管家是由凯伦圣科技与清华大学联合研发出品的智能车联网信息服务软件。任何使用本软件的用户均应仔细阅读本声明，用户可以选择不使用本软件，也可以主动取消本软件提供的服务，但用户使用本软件的行为将被视为对本声明全部内容的认可。
+　　在汽车驾驶过程中操作导航软件，可能会导致交通事故。为了避免事故发生，请在停车后操作。
+1、免责声明（当发生如下情况所造成的结果、损失与本软件无关）
+　　通讯网络、GPS软件等遭到破坏；用户产品通讯费用不足；用户擅自打开产品；擅自更换车载SIM卡。
+　　用户购买产品后未按本软件要求进行真实、有效注册登记后正常使用的；或用户未按本协议条款约定及时向本软件办理用户填写内容变更手续的；或按用户提供的通讯方式，本软件无法及时取得正常联系；或用户不配合本软件的服务与警告措施。
+　　　当用户汽车电瓶出现欠电压或出现其他故障导致本产品不能正常工作；或在使用环境超出本软件产品有技术参数要求，造成不能正常使用。
+　　当用户已知产品存在故障，但未及时返回本公司进行维修；或产品（更换）期间，系统通知用户进行产品维修（更换）之时起至维修（更换）产品重新安装完毕之时止。
+　　 用户要求本软件实施“远程开关车门及切断车辆油电路”的情况下，本软件需核实用户要求是否会危害公共安全利益或他人的安全；经本公司核实，在不危害公共安全利益或他人安全的前提下，本系统可实施用户要求，如造成相应后果，应由用户承担全部责任。 
+　　如用户在使用本软件过程中涉及第三方服务机构的情况下，所产生的任何问题或法律纠纷应由用户与第三方解决，我司均不承担任何责任。
+2、不可抗力因素
+　　因网络状况、通讯线路、第三方网站等任何原因而导致不能及时为用户提供服务，本软件不承担任何法律责任；
+　　如遇到不可抗力事件（如火灾、战争、自然灾害、政府禁令等事件），致使不能执行本申明的部分条款；
+　　用户应该对使用本软件提供的服务结果自行承担风险。
+　　用户在使用金橙车管家手机端软件时，手机号码设置一栏以用户最后一次使用的手机号码为准。
+　　
+二、服务条款
+    本产品在使用过程中，会产生GPRS流量费用，该费用由用户自行承担。请在使用本软件前，请您务必仔细阅读并透彻理解本服务条款。一旦您选择使用本系统，即表示您认可本服务条款。
+
+
+1、服务条款的确认和接受   
+本系统涉及到的地图数据、软件及相关资料的所有权和知识产权归深圳市凯伦圣科技有限公司所有。本服务条款的效力范围及于本系统的一切产品和服务，用户在享受本系统任何服务时，应当受本服务程序的约束。当用户在使用本系统的各项服务时，用户的使用行为视为其对该服务条款以及本系统在该服务中发出的各类公告的同意。  
+2、产品安装：
+　　用户同意在安装时对车内部分电路与产品对接。 
+3、产品保修期与维修服务
+   3.1自您购买本产品之日起，本公司承诺按如下条款提供保修和维修服务：
+     3.1.1产品在安装后若存在质量问题，三个月内包换（下述3.3项情况除外）；
+     3.1.2产品安装后享受12个月内的免费保修服务，即保修期为1年；
+     3.1.3产品在安装12个月后，仍将在全寿命周期内提供有偿维修服务。
+       3.2保修期满后，如需本系统维修或维护的，则需要根据损坏程度，用户需支付维修材料费和调试检测费。
+   3.3以下不属于包换和保修范围：
+     3.3.1您未及时向SIM卡充值导致通讯中断；
+     3.3.2您使用不当或人为因素造成的故障及损坏；
+     3.3.3您擅自拆修、改装；遇到不可抗力的因素（如火灾、交通事故等）而造成的故障及损坏。
+4、服务简介：
+    4.1自设备安装之日起，本系统提供24小时热线服务，若尚未建立当地后台服务中心，则由深圳总
+部后台提供服务；
+   4.2后台服务中心电话号码有任何变更，会由后台中心直接发送到您的手机端软件；
+   4.3服务后台提供的一键导航、汽车代驾、道路救援服务信息仅作为参考；用户以其他单位提供的官方数据为准。
+   4.4服务后台提供的主动服务类项目：
+　　4.4.1全国违章查询、服务到期提醒、保险到期提醒（提前一个月系统主动提醒并推送信息服务）；
+　　4.4.2汽车年审到期提醒、驾照到期提醒（提前两个月系统主动提醒并推送信息服务）；
+　　4.4.3汽车维修报警信息即时推送；
+　　4.4.4汽车保养提醒：按车型所规定的首保提醒公里数提前500公里进行提醒，以后提醒距离上次保养间隔5000公里。
+5、您的义务：
+   5.1您应按本协议要求按时缴纳服务费，收费标准详见本产品说明书。
+   5.2您应保证所提供的联系电话号码有效，在提供服务时保证电话畅通。
+6、您的责任：
+   6.1如您不履行本协议第五条款约定中的义务，应承担违反义务所造成的损失。
+   6.2在本协议的有效期内，如您单方面要求终止本协议或以自己的行为表明自动终止本协议（如不按时缴纳服务费、任意拆卸或修理产品等），不得以任何形式要求本公司退回货款及服务费。
+   6.3在本协议的有效期内，如您车辆发生任何形式的产权或使用转移，需主动及时联系服务后台更改资料，否则，产生后果与本系统无关。
+7、结束服务：
+  7.1服务到期前一个月内，本系统将进行续交服务费提醒；若您在服务到期前仍未续交服务费，且不向
+
+
+本公司做任何解释说明的，本系统视您欠交服务费处理，即协议自动解除。
+  7.2在某一方因特殊原因提出终止，并经双方书面同意认可时。
+  7.3由于国家法律、法规及政策变化使本协议无法履行，经双方协商同意，可以提前终止服务。本公司无需承担任何赔偿责任。
+
+　　"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+    </ScrollView>
+
+    <!-- 　　□同意免责声明及凯伦圣服务条款。 -->
+    <!-- □下次不再提示 -->
+    <!-- 　　□接受                                                      □拒绝 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5sp"
+        android:layout_marginTop="5sp"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <!-- <CheckBox -->
+            <!-- android:id="@+id/init_no_cb" -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:layout_height="wrap_content" /> -->
+
+
+            <!-- <TextView -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:text="不同意" /> -->
+
+            <Button
+                android:id="@+id/init_no_cb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_black"
+                android:text="拒绝"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/init_ok_cb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_black"
+                android:text="同意"
+                android:textColor="@android:color/white" />
+
+            <!-- <CheckBox -->
+            <!-- android:id="@+id/init_ok_cb" -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:checked="true" /> -->
+
+
+            <!-- <TextView -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:text="同意" /> -->
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

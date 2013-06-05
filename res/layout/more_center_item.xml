@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="62px"
+        android:layout_margin="6px"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/more_item_icon"
+            android:layout_width="63px"
+            android:layout_height="62px"
+            android:layout_centerVertical="true"
+            android:background="@drawable/more_item_about" />
+
+        <!-- android:layout_width="match_parent" -->
+        <!-- android:layout_height="62px" -->
+        <!-- android:layout_marginLeft="-7px" -->
+        <!-- android:background="@drawable/more_item_bg" -->
+        <!-- android:gravity="center" > -->
+
+        <TextView
+            android:id="@+id/more_item_text"
+            android:layout_width="233px"
+            android:layout_height="62px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="-7px"
+            android:layout_toRightOf="@+id/more_item_icon"
+            android:layout_weight="1.0"
+            android:background="@drawable/more_item_bg"
+            android:gravity="center"
+            android:text="测试信息"
+            android:textColor="@android:color/white"
+            android:textSize="27px" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/more_item_text"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15px"
+            android:src="@drawable/moreitems_go" />
+    </RelativeLayout>
+
+</LinearLayout>

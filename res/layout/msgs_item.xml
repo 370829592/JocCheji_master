@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="horizontal" >
+
+    <View
+        android:id="@+id/msgs_item_left"
+        android:layout_width="50dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <RelativeLayout
+        android:id="@+id/msgs_item_bubble"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dip"
+        android:layout_marginTop="6dip"
+        android:layout_weight="1"
+         >
+
+        <ImageView
+            android:id="@+id/msgs_item_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/msgs_push" />
+
+        <TextView
+            android:id="@+id/msgs_item_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/msgs_item_main"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="5dip"
+            android:layout_marginTop="7dip"
+            android:text="This is State or Send Time"
+            android:textColor="#BDBDBD"
+            android:textSize="12dip" />
+
+        <TextView
+            android:id="@+id/msgs_item_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/msgs_item_icon"
+            android:text="This is Content"
+            android:textColor="#6F6F6F"
+            android:textSize="18dip" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/msgs_item_right"
+        android:layout_width="50dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+</LinearLayout>

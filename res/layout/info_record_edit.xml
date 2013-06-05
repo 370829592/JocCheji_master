@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/xfjl_edit_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:orientation="vertical" >
+
+        <!-- <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none" > -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/info_service_rlt_henci"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:text="本次消费"
+                        android:textColor="#FFF"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/info_service_edt_benci"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="#FFF"
+                        style="@style/single_line_text_box"
+                        android:ems="10"
+                		android:hint="请输入消费"
+                		android:digits="0123456789"
+                		android:inputType="number"
+                        android:textSize="16sp" />
+                        
+                      <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="3dp"
+                        android:text="元"
+                        android:layout_toRightOf="@+id/info_service_edt_benci"
+                        android:textColor="@color/rmct_carinf_lbl_color"
+                        android:textSize="16sp" />
+                      
+                      
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="80dp"
+                        android:text="保养公里数"
+                        android:textColor="#FFF"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/info_service_edt_gongli"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/info_service_rlt_henci"
+                        android:textColor="@color/rmct_carinf_txt_color"
+                        style="@style/single_line_text_box"
+                        android:ems="10"
+                		android:hint="请输入公里数"
+                		android:digits="0123456789"
+                		android:inputType="number"
+                        android:textSize="16sp" />
+                        
+                      <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="3dp"
+                        android:text="公里"
+                        android:layout_toRightOf="@+id/info_service_edt_gongli"
+                        android:textColor="@color/rmct_carinf_lbl_color"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+								
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                     android:layout_marginBottom="10dp"
+					>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="35dp"
+                        android:layout_marginTop="10dp"
+                        android:text="消费内容"
+                        android:textColor="#FFF"
+                        android:textSize="16sp" />
+                </RelativeLayout>			
+			
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="0.7dp"
+				>
+                                    
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+        			android:layout_marginRight="5dp"
+					android:background="@drawable/info_service_up_bg" >
+
+                    <TextView 
+                    	android:id="@+id/info_service_tv_content"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:text="0项  保养内容  可选择"
+                        android:layout_toRightOf="@+id/rmct_carinf_rlt_engineno"
+                        android:textColor="@color/rmct_carinf_tag_color"
+                        android:textSize="16sp" />
+  
+                </RelativeLayout>
+                                                  
+                <RelativeLayout
+                    android:id="@+id/rmct_carinf_rlt_frameno"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:layout_marginLeft="5dp"
+        			android:layout_marginRight="5dp"
+					android:background="@drawable/info_bg"
+					>
+
+                    <ListView 
+                    	android:id="@+id/info_service_type_list_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/rmct_carinf_rlt_engineno"
+                        android:cacheColorHint="#00000000"
+                        android:listSelector="#47a8b3"
+                        android:scrollbars="none"
+                        />
+  
+                </RelativeLayout>
+                
+                <RelativeLayout
+                    android:id="@+id/rmct_carinf_rlt_frameno"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/info_service_down_bg" >
+
+              	<RelativeLayout
+                    android:id="@+id/rmct_carinf_rlt_weixiu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" 
+                    android:layout_centerVertical="true"
+                    android:clickable="true"
+                    >
+                    <TextView 
+                    	android:id="@+id/info_service_lbt_weixiu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:text="维修费用"
+                        android:layout_toRightOf="@+id/rmct_carinf_rlt_engineno"
+                        android:textColor="@color/rmct_carinf_tag_color"
+                        android:textSize="16sp" />
+                        
+                      <Button 
+                    	android:id="@+id/info_service_btn_weixiu"
+                        android:layout_width="14dp"
+                        android:layout_height="14dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="6dp"
+                        android:layout_toRightOf="@+id/info_service_lbt_weixiu"
+                        android:textColor="@color/rmct_carinf_lbl_color"
+                        android:textSize="16sp"
+                        android:enabled="false"
+                        android:background="@drawable/info_checkbox"
+                        />
+                   </RelativeLayout>
+                   <RelativeLayout
+                    android:id="@+id/rmct_carinf_rlt_else"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" 
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/rmct_carinf_rlt_weixiu"
+                    android:clickable="true"
+                    >
+                      <TextView 
+                    	android:id="@+id/info_service_lbt_else"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="24dp"
+                        android:text="其它费用"
+                        android:layout_toRightOf="@+id/info_service_lbc_weixiu"
+                        android:textColor="@color/rmct_carinf_tag_color"
+                        android:textSize="16sp" />
+                        
+                      <Button 
+                    	android:id="@+id/info_service_btn_else"
+                        android:layout_width="14dp"
+                        android:layout_height="14dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="6dp"
+                        android:layout_toRightOf="@+id/info_service_lbt_else"
+                        android:textColor="@color/rmct_carinf_lbl_color"
+                        android:textSize="16sp"
+                        android:enabled="false"
+						android:background="@drawable/info_checkbox"
+                        />
+                </RelativeLayout>
+                <Button
+                        android:id="@+id/rmct_carinf_btn_submit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="10dp"
+                       android:layout_marginLeft="620dp"
+                        android:layout_below="@+id/rmct_carinf_rlt_submit"
+                        android:textColor="#000"
+                        android:background="@drawable/btn_submit"
+                        android:text="确定"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+                </LinearLayout>
+                                
+            </LinearLayout>
+        <!-- </ScrollView> -->
+    </RelativeLayout>
+
+</LinearLayout>

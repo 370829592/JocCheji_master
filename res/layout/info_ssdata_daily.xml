@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/info_ssdata_daily_travel_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:background="@drawable/info_ssdata_daily_bg"
+        android:orientation="vertical"
+        android:weightSum="3" >
+
+        <TextView
+            android:id="@+id/info_ssdata_daily_travel_lbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/info_ssdata_daily_travel"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/info_ssdata_daily_travel" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/info_ssdata_daily_travel_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/info_ssdata_daily_travel_num"
+                android:textColor="@color/info_ssdata_daily_travel_num"
+                android:textSize="@dimen/info_ssdata_daily_travel_num" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/info_ssdata_daily_travel_num_unit"
+                android:textColor="@color/info_ssdata_daily_travel_num"
+                android:textSize="@dimen/info_ssdata_daily_travel_num_unit"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="2px"
+        android:layout_height="fill_parent"
+        android:src="@drawable/info_ssdata_daily_splite" />
+
+    <LinearLayout
+        android:id="@+id/info_ssdata_daily_oil_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:background="@drawable/info_ssdata_daily_bg"
+        android:orientation="vertical"
+        android:weightSum="3" >
+
+        <TextView
+            android:id="@+id/info_ssdata_daily_oil_lbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/info_ssdata_daily_oil"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/info_ssdata_daily_oil" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/info_ssdata_daily_oil_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/info_ssdata_daily_oil_num"
+                android:textColor="@color/info_ssdata_daily_oil_num"
+                android:textSize="@dimen/info_ssdata_daily_oil_num" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/info_ssdata_daily_oil_num_unit"
+                android:textColor="@color/info_ssdata_daily_oil_num"
+                android:textSize="@dimen/info_ssdata_daily_oil_num_unit"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

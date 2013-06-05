@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="330dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:orientation="vertical" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/rmct_carinf_rlt_licenseplate"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="6dp"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/more_car_loginpassword_up_bg" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:text="@string/rmct_carinf_lbl_licenseplate_"
+                        android:textColor="@color/rmct_carinf_lbl_color"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/rmct_carinf_edt_licenseplate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_toRightOf="@+id/rmct_carinf_rlt_licenseplate"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/rmct_carinf_txt_color"
+                        style="@style/single_line_text_box"
+                        android:ems="10"
+                		android:hint="@string/rmct_carinf_lbl_licenseplate_ed"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:src="@drawable/rmct_carinf_alt" />
+
+                <RelativeLayout
+                    android:id="@+id/rmct_carinf_rlt_engineno"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/more_car_loginpassword_m_bg" >
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:text="@string/rmct_carinf_lbl_engineno_"
+                        android:textColor="@color/rmct_carinf_lbl_color"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/rmct_carinf_edt_engineno"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_toRightOf="@+id/rmct_carinf_rlt_engineno"
+                        android:textColor="@color/rmct_carinf_txt_color"
+                        style="@style/single_line_text_box"
+                        android:ems="10"
+                		android:hint="@string/rmct_carinf_lbl_engineno_ed"
+                		android:digits="0123456789abcdefghigklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+                
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:src="@drawable/rmct_carinf_alt" />
+                    
+                <RelativeLayout
+                    android:id="@+id/rmct_carinf_rlt_frameno"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+					android:background="@drawable/more_car_loginpassword_m_bg" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:text="@string/rmct_carinf_lbl_frameno_"
+                        android:textColor="@color/rmct_carinf_lbl_color"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/rmct_carinf_edt_frameno"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_toRightOf="@+id/rmct_carinf_rlt_frameno"
+                        android:textColor="@color/rmct_carinf_txt_color"
+                        style="@style/single_line_text_box"
+                        android:ems="10"
+                		android:hint="@string/rmct_carinf_lbl_frameno_ed"
+                		android:digits="0123456789abcdefghigklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:src="@drawable/rmct_carinf_alt" />
+                    
+              <RelativeLayout
+                    android:id="@+id/rmct_carinf_rlt_license_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+					android:background="@drawable/more_car_loginpassword_m_bg" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:text="@string/rmct_carinf_lbl_license_date_"
+                        android:textColor="@color/rmct_carinf_lbl_color"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/rmct_carinf_edt_license_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_toRightOf="@+id/rmct_carinf_rlt_license_date"
+                        android:textColor="@color/rmct_carinf_txt_color"
+                        style="@style/single_line_text_box"
+                        android:ems="10"
+                        android:editable="false"
+                		android:hint="@string/rmct_carinf_lbl_license_date_ed"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:src="@drawable/rmct_carinf_alt" />
+              <RelativeLayout
+                    android:id="@+id/rmct_carinf_rlt_examine_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+					android:background="@drawable/more_car_loginpassword_m_bg" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:text="@string/rmct_carinf_lbl_examine_date_"
+                        android:textColor="@color/rmct_carinf_lbl_color"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/rmct_carinf_edt_examine_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_toRightOf="@+id/rmct_carinf_rlt_examine_date"
+                        android:textColor="@color/rmct_carinf_txt_color"
+                        style="@style/single_line_text_box"
+                        android:ems="10"
+                        android:editable="false"
+                		android:hint="@string/rmct_carinf_lbl_examine_date_ed"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:src="@drawable/rmct_carinf_alt" />
+
+                <RelativeLayout
+                    android:id="@+id/rmct_carinf_rlt_emissions"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+					android:background="@drawable/more_car_loginpassword_m_bg" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:text="@string/rmct_carinf_lbl_emissions_"
+                        android:textColor="@color/rmct_carinf_lbl_color"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/rmct_carinf_edt_emissions"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_toRightOf="@+id/rmct_carinf_rlt_emissions"
+                        android:textColor="@color/rmct_carinf_txt_color"
+                        style="@style/single_line_text_box"
+                        android:ems="10"
+                		android:hint="@string/rmct_carinf_lbl_emissions_ed"
+                		android:digits="0123456789."
+                		android:inputType="number"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+                
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:src="@drawable/rmct_carinf_alt" />
+                
+                <RelativeLayout
+                    android:id="@+id/rmct_carinf_rlt_submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+					android:background="@drawable/more_car_loginpassword_down_bg"
+					>
+                    <Button
+                        android:id="@+id/rmct_carinf_btn_submit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="180dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_below="@+id/rmct_carinf_rlt_submit"
+                        android:textColor="@color/rmct_carinf_txt_color"
+                        android:background="@drawable/btn_submit"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</LinearLayout>

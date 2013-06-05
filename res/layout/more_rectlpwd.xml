@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/center_bg"
+    android:orientation="vertical" >
+
+    <com.markupartist.android.widget.ActionBar
+        android:id="@+id/more_rectlpwd_actionbar"
+        style="@style/ActionBar" >
+    </com.markupartist.android.widget.ActionBar>
+
+    <LinearLayout
+        android:id="@+id/sign_in_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dip"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/originalpassword_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/more_car_loginpassword_up_bg"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <TextView
+                android:layout_width="65dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="原密码:"
+                android:textColor="@android:color/black" />
+
+            <EditText
+                android:id="@+id/originalpassword_et"
+                style="@style/single_line_text_box_pwd"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="原密码"
+                android:imeOptions="actionNext"
+                android:inputType="textPassword" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/newpassword_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/more_car_loginpassword_m_bg"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="65dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="新密码:"
+                android:textColor="@android:color/black" />
+
+            <EditText
+                android:id="@+id/input_newpassword_et"
+                style="@style/single_line_text_box_pwd"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="输入新密码"
+                android:imeOptions="actionNext"
+                android:inputType="textPassword" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/more_car_loginpassword_down_bg"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="65dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="重复密码:"
+                android:textColor="@android:color/black" />
+
+            <EditText
+                android:id="@+id/input_repasswords_et"
+                style="@style/single_line_text_box_pwd"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="再次输入新密码"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,150 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/doc_drxsjl_bg" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="128dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/info_ssdata_record_time_month" >
+
+            <TextView
+                android:id="@+id/info_record_item_time_month"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|left"
+                android:layout_marginLeft="@dimen/info_ssdata_record_time_month_l"
+                android:gravity="center"
+                android:text="@string/info_ssdata_record_time_month"
+                android:textColor="@color/info_ssdata_record_time_month_color"
+                android:textSize="@dimen/info_ssdata_record_time_month_size"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/info_record_item_time_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/info_ssdata_record_time_date"
+            android:gravity="center"
+            android:text="@string/info_ssdata_record_time_date"
+            android:textColor="#000"
+            android:textSize="@dimen/info_ssdata_record_time_date_size"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/info_record_item_pos_start_"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="52dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/linearLayout1"
+        android:textSize="15sp" 
+        android:text="广东省深圳市南山" />
+
+    <TextView
+        android:id="@+id/info_recored_item_pos_end_"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_alignBaseline="@+id/info_record_item_pos_start_"
+        android:layout_alignBottom="@+id/info_record_item_pos_start_"
+        android:layout_marginLeft="122dp"
+        android:layout_toRightOf="@+id/info_record_item_pos_start_"
+        android:text="广东省深圳市南山"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/info_record_item_time_s"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/linearLayout1"
+        android:layout_marginTop="140dp"
+        android:layout_marginLeft="5dp"
+        android:text="15:30"
+        android:textColor="#FFF"
+        android:textSize="25sp" />
+    <TextView
+        android:id="@+id/info_record_item_time_e"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/linearLayout1"
+        android:layout_marginTop="140dp"
+        android:layout_marginLeft="110dp"
+        android:text="16:00"
+        android:textColor="#FFF"
+        android:textSize="25sp" />
+    <TextView
+        android:id="@+id/info_record_item_oil_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/linearLayout1"
+        android:layout_marginTop="140dp"
+        android:layout_marginLeft="290dp"
+        android:text="1L"
+        android:textColor="#FFF"
+        android:textSize="25sp" />
+    <TextView
+        android:id="@+id/info_record_item_oil_pay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/linearLayout1"
+        android:layout_marginTop="140dp"
+        android:gravity="center"
+        android:layout_marginLeft="380dp"
+        android:text="007.5"
+        android:textColor="#FFF"
+        android:textSize="25sp" />
+    <TextView
+        android:id="@+id/info_record_item_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_toRightOf="@+id/linearLayout1"
+        android:layout_marginTop="195dp"
+        android:layout_marginLeft="120dp"
+        android:text="00:30"
+        android:textColor="#FFF"
+        android:textSize="15sp" />
+    
+    <TextView
+        android:id="@+id/info_ssdata_record_mile_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/linearLayout1"
+        android:layout_marginTop="250dp"
+        android:layout_marginLeft="20dp"
+        android:text="20"
+        android:textColor="#FFF"
+        android:textSize="25sp" />
+    <TextView
+        android:id="@+id/info_record_item_map_speed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/linearLayout1"
+        android:layout_marginTop="250dp"
+        android:layout_marginLeft="300dp"
+        android:text="100"
+        android:textColor="#FFF"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/info_ssdata_record_map_nav"
+        android:layout_width="50dp"
+        android:layout_height="60dp"
+        android:clickable="true"
+        android:layout_alignTop="@+id/info_record_item_map_speed"
+        android:layout_toRightOf="@+id/info_record_item_oil_pay" />
+
+</RelativeLayout>

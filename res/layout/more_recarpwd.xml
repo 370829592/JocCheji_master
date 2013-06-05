@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/center_bg"
+    android:orientation="vertical" >
+
+    <com.markupartist.android.widget.ActionBar
+        android:id="@+id/more_recarpwd_actionbar"
+        style="@style/ActionBar" >
+    </com.markupartist.android.widget.ActionBar>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:paddingTop="40dip" >
+
+        <LinearLayout
+            android:id="@+id/sign_in_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <!-- <LinearLayout -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:background="@drawable/more_car_loginpassword_up_bg" -->
+            <!-- android:gravity="center_vertical" -->
+            <!-- android:orientation="horizontal" -->
+            <!-- android:paddingTop="6.0dip" > -->
+
+
+            <!-- <TextView -->
+            <!-- android:layout_width="65dip" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:layout_gravity="center" -->
+            <!-- android:gravity="center" -->
+            <!-- android:text="车牌号" -->
+            <!-- android:textColor="@android:color/black" -->
+            <!-- android:textSize="15dip" /> -->
+
+
+            <!-- <TextView -->
+            <!-- android:id="@+id/more_actmdf_lbl_name" -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:layout_height="34.0dip" -->
+            <!-- android:ems="10" -->
+            <!-- android:gravity="center_vertical" -->
+            <!-- android:paddingLeft="12.0dip" -->
+            <!-- android:text="粤XY1234" -->
+            <!-- android:textColor="@android:color/black" -->
+            <!-- android:textSize="16.0dip" > -->
+            <!-- </TextView> -->
+            <!-- </LinearLayout> -->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/more_car_loginpassword_up_bg"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="65dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="原密码:"
+                    android:textColor="@android:color/black" />
+
+                <EditText
+                    android:id="@+id/originalpassword_et"
+                    style="@style/single_line_text_box_pwd_s"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="原密码"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPassword" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/more_car_loginpassword_m_bg"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="65dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="新密码:"
+                    android:textColor="@android:color/black" />
+
+                <EditText
+                    android:id="@+id/input_newpassword_et"
+                    style="@style/single_line_text_box_pwd_s"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="输入新密码"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPassword" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/more_car_loginpassword_down_bg"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="65dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="重复密码:"
+                    android:textColor="@android:color/black" />
+
+                <EditText
+                    android:id="@+id/input_repasswords_et"
+                    style="@style/single_line_text_box_pwd_s"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="再次输入新密码"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPassword" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

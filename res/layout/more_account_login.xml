@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/center_bg"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <com.markupartist.android.widget.ActionBar
+        android:id="@+id/more_account_login_actionbar"
+        style="@style/ActionBar" >
+    </com.markupartist.android.widget.ActionBar>
+    <!-- <LinearLayout -->
+    <!-- android:id="@+id/layout_send_btn" -->
+    <!-- android:layout_width="fill_parent" -->
+    <!-- android:layout_height="80dip" -->
+    <!-- android:background="@drawable/actionbar_bg" -->
+    <!-- android:orientation="horizontal" -->
+    <!-- android:paddingTop="6.0dip" > -->
+
+
+    <!-- <Button -->
+    <!-- android:id="@+id/account_login_back_btn" -->
+    <!-- android:layout_width="40dip" -->
+    <!-- android:layout_height="40dip" -->
+    <!-- android:layout_marginLeft="3dip" -->
+    <!-- android:layout_weight="1" -->
+    <!-- android:background="@drawable/btn_black" -->
+    <!-- android:text="返回" -->
+    <!-- android:textColor="@android:color/white" /> -->
+
+
+    <!-- <TextView -->
+    <!-- android:id="@+id/bn_content_delete" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_weight="1" -->
+    <!-- android:gravity="center" -->
+    <!-- android:text="添加账号" -->
+    <!-- android:textColor="@color/actionbar_title" -->
+    <!-- android:textSize="25.0sp" /> -->
+
+
+    <!-- <Button -->
+    <!-- android:id="@+id/more_account_login_btn" -->
+    <!-- android:layout_width="40dip" -->
+    <!-- android:layout_height="40dip" -->
+    <!-- android:layout_marginRight="3dip" -->
+    <!-- android:layout_weight="1" -->
+    <!-- android:background="@drawable/btn_black" -->
+    <!-- android:text="添加" -->
+    <!-- android:textColor="@android:color/white" /> -->
+    <!-- </LinearLayout> -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:paddingTop="40dip" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/more_car_loginpassword_up_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingTop="6.0dip" >
+
+            <TextView
+                android:layout_width="65dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="账号"
+                android:textColor="@android:color/black"
+                android:textSize="15dip" />
+
+            <EditText
+                android:id="@+id/account_login_num_et"
+                style="@style/single_line_text_box"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="请输入账号"
+                android:imeOptions="actionNext"
+                android:text="" >
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/more_car_loginpassword_down_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="65dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="密码"
+                android:textColor="@android:color/black"
+                android:textSize="15dip" />
+
+            <EditText
+                android:id="@+id/account_login_password_et"
+                style="@style/single_line_text_box"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="请输入密码"
+                android:imeOptions="actionNone"
+                android:inputType="textPassword"
+                android:text="" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

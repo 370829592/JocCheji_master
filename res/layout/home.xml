@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.icalinks.jocyjt"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <com.markupartist.android.widget.ActionBar
+        android:id="@+id/home_actionbar"
+        style="@style/ActionBar" >
+    </com.markupartist.android.widget.ActionBar>
+    <!-- xmlns:app="http://schemas.android.com/apk/res/com.icalinks.jocyjt" -->
+
+    <TabHost
+        android:id="@android:id/tabhost"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" 
+        android:background="@drawable/bg"
+        >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal"
+             >
+
+
+            <RadioGroup
+                android:id="@+id/home_radio"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+
+                <RadioButton
+                    android:id="@+id/home_btn_info"
+                    style="@style/home_tab_left"
+                    android:background="@drawable/home_docbtn_bg"
+                    android:checked="true"
+                    android:tag="radio_button1" />
+
+
+                <RadioButton
+                    android:id="@+id/home_btn_svcs"
+                    style="@style/home_tab_left"
+                    android:background="@drawable/home_mishubtn_bg"
+                    android:tag="radio_button0" />
+
+
+                <RadioButton
+                    android:id="@+id/home_btn_more"
+                    style="@style/home_tab_left"
+                    android:background="@drawable/home_morebtn_bg"
+                    android:layout_marginBottom="10dp"
+                    android:tag="radio_button3" />
+            </RadioGroup>
+
+            <LinearLayout
+                android:id="@+id/home_linearLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="-7px"
+                android:orientation="vertical" >
+
+                <FrameLayout
+                    android:id="@android:id/tabcontent"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                     >
+                </FrameLayout>
+
+                <TabWidget
+                    android:id="@android:id/tabs"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.0"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+    </TabHost>
+    </LinearLayout>

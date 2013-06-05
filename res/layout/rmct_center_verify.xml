@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/layout_margin_size"
+        android:background="@drawable/dialog_bg"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/rmct_center_verify_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/rmct_center_title"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/rmct_center_verify_pwd001"
+                android:layout_width="49px"
+                android:layout_height="49px"
+                android:layout_margin="5px"
+                android:layout_weight="1"
+                android:background="#9CAE73"
+                android:gravity="center"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/rmct_center_verify_pwd002"
+                android:layout_width="49px"
+                android:layout_height="49px"
+                android:layout_margin="5px"
+                android:layout_weight="1"
+                android:background="#9CAE73"
+                android:gravity="center"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/rmct_center_verify_pwd003"
+                android:layout_width="49px"
+                android:layout_height="49px"
+                android:layout_margin="5px"
+                android:layout_weight="1"
+                android:background="#9CAE73"
+                android:gravity="center"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/rmct_center_verify_pwd004"
+                android:layout_width="49px"
+                android:layout_height="49px"
+                android:layout_margin="5px"
+                android:layout_weight="1"
+                android:background="#9CAE73"
+                android:gravity="center"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/rmct_center_verify_pwd005"
+                android:layout_width="49px"
+                android:layout_height="49px"
+                android:layout_margin="5px"
+                android:layout_weight="1"
+                android:background="#9CAE73"
+                android:gravity="center"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/rmct_center_verify_pwd006"
+                android:layout_width="49px"
+                android:layout_height="49px"
+                android:layout_margin="5px"
+                android:layout_weight="1"
+                android:background="#9CAE73"
+                android:gravity="center"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <ScrollView
+            android:id="@+id/linearLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/rmct_center_verify_num001"
+                        android:layout_width="108px"
+                        android:layout_height="66px"
+                        android:layout_margin="5px"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_black"
+                        android:text="@string/rmct_center_verify_num001"
+                        android:textColor="@android:color/white" />
+
+                    <Button
+                        android:id="@+id/rmct_center_verify_num002"
+                        android:layout_width="108px"
+                        android:layout_height="66px"
+                        android:layout_margin="5px"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_black"
+                        android:text="@string/rmct_center_verify_num002"
+                        android:textColor="@android:color/white" />
+
+                    <Button
+                        android:id="@+id/rmct_center_verify_num003"
+                        android:layout_width="108px"
+                        android:layout_height="66px"
+                        android:layout_margin="5px"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_black"
+                        android:text="@string/rmct_center_verify_num003"
+                        android:textColor="@android:color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/rmct_center_verify_num004"
+                        android:layout_width="108px"
+                        android:layout_height="66px"
+                        android:layout_margin="5px"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_black"
+                        android:text="@string/rmct_center_verify_num004"
+                        android:textColor="@android:color/white" />
+
+                    <Button
+                        android:id="@+id/rmct_center_verify_num005"
+                        android:layout_width="108px"
+                        android:layout_height="66px"
+                        android:layout_margin="5px"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_black"
+                        android:text="@string/rmct_center_verify_num005"
+                        android:textColor="@android:color/white" />
+
+                    <Button
+                        android:id="@+id/rmct_center_verify_num006"
+                        android:layout_width="108px"
+                        android:layout_height="66px"
+                        android:layout_margin="5px"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_black"
+                        android:text="@string/rmct_center_verify_num006"
+                        android:textColor="@android:color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/rmct_center_verify_num007"
+                        android:layout_width="108px"
+                        android:layout_height="66px"
+                        android:layout_margin="5px"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_black"
+                        android:text="@string/rmct_center_verify_num007"
+                        android:textColor="@android:color/white" />
+
+                    <Button
+                        android:id="@+id/rmct_center_verify_num008"
+                        android:layout_width="108px"
+                        android:layout_height="66px"
+                        android:layout_margin="5px"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_black"
+                        android:text="@string/rmct_center_verify_num008"
+                        android:textColor="@android:color/white" />
+
+                    <Button
+                        android:id="@+id/rmct_center_verify_num009"
+                        android:layout_width="108px"
+                        android:layout_height="66px"
+                        android:layout_margin="5px"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_black"
+                        android:text="@string/rmct_center_verify_num009"
+                        android:textColor="@android:color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/rmct_center_verify_delete"
+                        android:layout_width="108px"
+                        android:layout_height="66px"
+                        android:layout_margin="5px"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_black"
+                        android:text="@string/rmct_center_veryfy_delete"
+                        android:textColor="#A3D52C" />
+
+                    <Button
+                        android:id="@+id/rmct_center_verify_num000"
+                        android:layout_width="108px"
+                        android:layout_height="66px"
+                        android:layout_margin="5px"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_black"
+                        android:text="@string/rmct_center_verify_num000"
+                        android:textColor="@android:color/white" />
+
+                    <Button
+                        android:id="@+id/rmct_center_verify_define"
+                        android:layout_width="108px"
+                        android:layout_height="66px"
+                        android:layout_margin="5px"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_black"
+                        android:text="@string/rmct_center_verify_define"
+                        android:textColor="#FF8500" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+        <!-- <LinearLayout -->
+        <!-- android:layout_width="match_parent" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:orientation="vertical" > -->
+        <!-- </LinearLayout> -->
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/rmct_center_verify_close"
+        android:layout_width="45px"
+        android:layout_height="45px"
+        android:layout_alignTop="@+id/linearLayout2"
+        android:layout_marginLeft="-46px"
+        android:layout_marginTop="-23px"
+        android:layout_toRightOf="@+id/linearLayout2"
+        android:background="@drawable/btn_close" />
+
+</RelativeLayout>

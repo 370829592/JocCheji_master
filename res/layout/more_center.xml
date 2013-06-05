@@ -1,0 +1,678 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/center_bg"
+    android:orientation="horizontal" >
+
+    <!-- <ScrollView -->
+    <!-- android:id="@+id/scrMore" -->
+    <!-- android:layout_width="fill_parent" -->
+    <!-- android:layout_height="fill_parent" -->
+    <!-- android:layout_weight="1" -->
+    <!-- android:paddingBottom="9.0dip" -->
+    <!-- android:paddingLeft="9.0dip" -->
+    <!-- android:paddingRight="4.5dip" -->
+    <!-- android:paddingTop="9.0dip" -->
+    <!-- android:scrollbars="none" > -->
+
+
+    <!-- <LinearLayout -->
+    <!-- android:layout_width="fill_parent" -->
+    <!-- android:layout_height="fill_parent" -->
+    <!-- android:gravity="center_horizontal" -->
+    <!-- android:orientation="vertical" > -->
+
+
+    <!-- <LinearLayout -->
+    <!-- android:layout_width="fill_parent" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:clickable="true" -->
+    <!-- android:gravity="center" -->
+    <!-- android:orientation="vertical" > -->
+
+
+    <!-- <LinearLayout -->
+    <!-- android:id="@+id/more_accountManage_Layout" -->
+    <!-- android:layout_width="fill_parent" -->
+    <!-- android:layout_height="62px" -->
+    <!-- android:gravity="center" -->
+    <!-- android:orientation="horizontal" > -->
+
+
+    <!-- <ImageView -->
+    <!-- android:id="@+id/more_accountManage_igv" -->
+    <!-- android:layout_width="63px" -->
+    <!-- android:layout_height="62px" -->
+    <!-- android:src="@drawable/moreitems_accountmanage_icon" /> -->
+
+
+    <!-- <LinearLayout -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="62px" -->
+    <!-- android:layout_marginLeft="-7px" -->
+    <!-- android:background="@drawable/more_item_bg" -->
+    <!-- android:gravity="center" > -->
+
+
+    <!-- <TextView -->
+    <!-- android:id="@+id/more_accountManage_tv" -->
+    <!-- style="@style/userinfo_panel_textview_title" -->
+    <!-- android:layout_width="fill_parent" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_weight="1.0" -->
+    <!-- android:gravity="center" -->
+    <!-- android:text="@string/more_center_actmgr" -->
+    <!-- android:textColor="@android:color/white" /> -->
+
+
+    <!-- <ImageView -->
+    <!-- android:id="@+id/more_accountManage_go_igv" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:src="@drawable/moreitems_go" /> -->
+    <!-- </LinearLayout> -->
+    <!-- </LinearLayout> -->
+    <!-- </LinearLayout> -->
+
+
+    <!-- <LinearLayout -->
+    <!-- android:layout_width="fill_parent" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:background="@drawable/more_item_bg" -->
+    <!-- android:clickable="true" -->
+    <!-- android:gravity="center" -->
+    <!-- android:orientation="vertical" -->
+    <!-- android:paddingTop="0.0dip" > -->
+
+
+    <!-- <LinearLayout -->
+    <!-- android:id="@+id/more_accountSafe_Layout" -->
+    <!-- android:layout_width="fill_parent" -->
+    <!-- android:layout_height="62px" -->
+    <!-- android:gravity="center" -->
+    <!-- android:orientation="horizontal" > -->
+
+
+    <!-- <ImageView -->
+    <!-- android:id="@+id/more_accountSafe_igv" -->
+    <!-- android:layout_width="63px" -->
+    <!-- android:layout_height="62px" -->
+    <!-- android:src="@drawable/moreitems_privacy_icon" /> -->
+
+
+    <!-- <LinearLayout -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="62px" -->
+    <!-- android:layout_marginLeft="-7px" -->
+    <!-- android:background="@drawable/more_item_bg" -->
+    <!-- android:gravity="center" > -->
+
+
+    <!-- <TextView -->
+    <!-- android:id="@+id/more_accountSafeContent_tv" -->
+    <!-- style="@style/userinfo_panel_textview_title" -->
+    <!-- android:layout_width="fill_parent" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_weight="1.0" -->
+    <!-- android:gravity="center_vertical" -->
+    <!-- android:text="@string/more_center_rmctpswd" -->
+    <!-- android:textColor="@android:color/white" /> -->
+
+
+    <!-- <ImageView -->
+    <!-- android:id="@+id/more_accountManage_go_igv" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:src="@drawable/moreitems_go" /> -->
+    <!-- </LinearLayout> -->
+    <!-- </LinearLayout> -->
+    <!-- </LinearLayout> -->
+
+
+    <!-- <LinearLayout -->
+    <!-- android:layout_width="fill_parent" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:background="@drawable/more_item_bg" -->
+    <!-- android:clickable="true" -->
+    <!-- android:gravity="center" -->
+    <!-- android:orientation="vertical" -->
+    <!-- android:paddingTop="0.0dip" > -->
+
+
+    <!-- <LinearLayout -->
+    <!-- android:id="@+id/more_fences_Layout" -->
+    <!-- android:layout_width="fill_parent" -->
+    <!-- android:layout_height="62px" -->
+    <!-- android:gravity="center" -->
+    <!-- android:orientation="horizontal" > -->
+
+
+    <!-- <ImageView -->
+    <!-- android:id="@+id/more_fences_igv" -->
+    <!-- android:layout_width="63px" -->
+    <!-- android:layout_height="62px" -->
+    <!-- android:src="@drawable/more_item_fences" /> -->
+
+
+    <!-- <TextView -->
+    <!-- android:id="@+id/more_fencesContent_tv" -->
+    <!-- style="@style/userinfo_panel_textview_title" -->
+    <!-- android:layout_width="fill_parent" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_weight="1.0" -->
+    <!-- android:gravity="center_vertical" -->
+    <!-- android:text="@string/more_center_fences" -->
+    <!-- android:textColor="@android:color/white" /> -->
+
+
+    <!-- <ImageView -->
+    <!-- android:id="@+id/more_fencesManage_go_igv" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:src="@drawable/moreitems_go" /> -->
+    <!-- </LinearLayout> -->
+    <!-- </LinearLayout> -->
+
+
+    <!-- <LinearLayout -->
+    <!-- android:layout_width="fill_parent" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:background="@drawable/more_item_bg" -->
+    <!-- android:clickable="true" -->
+    <!-- android:gravity="center" -->
+    <!-- android:orientation="vertical" -->
+    <!-- android:paddingTop="0.0dip" -->
+    <!-- android:visibility="gone" > -->
+
+
+    <!-- <LinearLayout -->
+    <!-- android:id="@+id/more_update_Layout" -->
+    <!-- android:layout_width="fill_parent" -->
+    <!-- android:layout_height="62px" -->
+    <!-- android:gravity="center" -->
+    <!-- android:orientation="horizontal" > -->
+
+
+    <!-- <ImageView -->
+    <!-- android:id="@+id/more_update_igv" -->
+    <!-- android:layout_width="63px" -->
+    <!-- android:layout_height="62px" -->
+    <!-- android:src="@drawable/moreitems_feedback_icon" /> -->
+
+
+    <!-- <ImageView -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="fill_parent" -->
+    <!-- android:layout_marginLeft="5.0dip" -->
+    <!-- android:paddingRight="15.0dip" -->
+    <!-- android:src="@drawable/cut_bg" /> -->
+
+
+    <!-- <TextView -->
+    <!-- android:id="@+id/more_updateContent_tv" -->
+    <!-- style="@style/userinfo_panel_textview_title" -->
+    <!-- android:layout_width="fill_parent" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_weight="1.0" -->
+    <!-- android:gravity="center_vertical" -->
+    <!-- android:text="更新版本" -->
+    <!-- android:textColor="@android:color/white" /> -->
+
+
+    <!-- <ImageView -->
+    <!-- android:id="@+id/more_accountManage_go_igv" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:src="@drawable/moreitems_go" /> -->
+    <!-- </LinearLayout> -->
+    <!-- </LinearLayout> -->
+
+
+    <!-- <LinearLayout -->
+    <!-- android:layout_width="fill_parent" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:background="@drawable/more_item_bg" -->
+    <!-- android:clickable="true" -->
+    <!-- android:gravity="center" -->
+    <!-- android:orientation="vertical" -->
+    <!-- android:paddingTop="0.0dip" > -->
+
+
+    <!-- <LinearLayout -->
+    <!-- android:id="@+id/more_fours_number_Layout" -->
+    <!-- android:layout_width="fill_parent" -->
+    <!-- android:layout_height="62px" -->
+    <!-- android:gravity="center" -->
+    <!-- android:orientation="horizontal" > -->
+
+
+    <!-- <ImageView -->
+    <!-- android:id="@+id/more_fours_number_igv" -->
+    <!-- android:layout_width="63px" -->
+    <!-- android:layout_height="62px" -->
+    <!-- android:src="@drawable/moreitems_fours_number_icon" /> -->
+
+
+    <!-- <TextView -->
+    <!-- android:id="@+id/more_fours_number_tv" -->
+    <!-- style="@style/userinfo_panel_textview_title" -->
+    <!-- android:layout_width="fill_parent" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_weight="1.0" -->
+    <!-- android:gravity="center_vertical" -->
+    <!-- android:text="@string/more_center_foursnumber" -->
+    <!-- android:textColor="@android:color/white" /> -->
+
+
+    <!-- <ImageView -->
+    <!-- android:id="@+id/more_accountManage_go_igv" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:src="@drawable/moreitems_go" /> -->
+    <!-- </LinearLayout> -->
+    <!-- </LinearLayout> -->
+
+
+    <!-- <LinearLayout -->
+    <!-- android:layout_width="fill_parent" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:background="@drawable/more_item_bg" -->
+    <!-- android:clickable="true" -->
+    <!-- android:gravity="center" -->
+    <!-- android:orientation="vertical" -->
+    <!-- android:paddingTop="0.0dip" > -->
+
+
+    <!-- <LinearLayout -->
+    <!-- android:id="@+id/more_privacy_Layout" -->
+    <!-- android:layout_width="fill_parent" -->
+    <!-- android:layout_height="62px" -->
+    <!-- android:gravity="center" -->
+    <!-- android:orientation="horizontal" > -->
+
+
+    <!-- <ImageView -->
+    <!-- android:id="@+id/more_privacy_igv" -->
+    <!-- android:layout_width="63px" -->
+    <!-- android:layout_height="62px" -->
+    <!-- android:src="@drawable/moreitems_localnumber" /> -->
+
+
+    <!-- <TextView -->
+    <!-- android:id="@+id/more_privacyContent_tv" -->
+    <!-- style="@style/userinfo_panel_textview_title" -->
+    <!-- android:layout_width="fill_parent" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_weight="1.0" -->
+    <!-- android:gravity="center_vertical" -->
+    <!-- android:text="@string/more_center_telnum" -->
+    <!-- android:textColor="@android:color/white" /> -->
+
+
+    <!-- <ImageView -->
+    <!-- android:id="@+id/more_accountManage_go_igv" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:src="@drawable/moreitems_go" /> -->
+    <!-- </LinearLayout> -->
+    <!-- </LinearLayout> -->
+
+
+    <!-- <LinearLayout -->
+    <!-- android:layout_width="fill_parent" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:background="@drawable/more_item_bg" -->
+    <!-- android:clickable="true" -->
+    <!-- android:gravity="center" -->
+    <!-- android:orientation="vertical" -->
+    <!-- android:paddingTop="0.0dip" > -->
+
+
+    <!-- <LinearLayout -->
+    <!-- android:id="@+id/more_moreScan_Layout" -->
+    <!-- android:layout_width="fill_parent" -->
+    <!-- android:layout_height="62px" -->
+    <!-- android:gravity="center" -->
+    <!-- android:visibility="gone" -->
+    <!-- android:orientation="horizontal" > -->
+
+
+    <!-- <ImageView -->
+    <!-- android:id="@+id/more_scan_igv" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!--  -->
+    <!--  -->
+    <!-- android:src="@drawable/moreitems_scan_icon" /> -->
+    <!-- <ImageView -->
+
+
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="fill_parent" -->
+    <!-- android:layout_marginLeft="5.0dip" -->
+    <!-- android:paddingRight="15.0dip" -->
+    <!-- android:src="@drawable/cut_bg" /> -->
+
+
+    <!-- <TextView -->
+    <!-- android:id="@+id/more_scanContent_tv" -->
+    <!-- style="@style/userinfo_panel_textview_title" -->
+    <!-- android:layout_width="fill_parent" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_weight="1.0" -->
+    <!-- android:gravity="center_vertical" -->
+    <!-- android:text="@string/more_center_scan" -->
+    <!-- android:textColor="@android:color/white" /> -->
+
+
+    <!-- <ImageView -->
+    <!-- android:id="@+id/more_accountManage_go_igv" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!--  -->
+    <!-- android:src="@drawable/moreitems_go" /> -->
+    <!-- </LinearLayout> -->
+    <!-- </LinearLayout> -->
+
+
+    <!-- <LinearLayout -->
+    <!-- android:layout_width="fill_parent" -->
+    <!-- android:layout_height="fill_parent" -->
+    <!-- android:gravity="center" -->
+    <!-- android:orientation="vertical" -->
+    <!-- android:paddingTop="5.0dip" -->
+    <!-- android:visibility="gone" > -->
+
+
+    <!-- <LinearLayout -->
+    <!-- android:id="@+id/more_exitAccount_Layout" -->
+    <!-- android:layout_width="fill_parent" -->
+    <!-- android:layout_height="60.0dip" -->
+    <!-- android:gravity="center" -->
+    <!-- android:orientation="horizontal" > -->
+
+
+    <!-- <TextView -->
+    <!-- android:id="@+id/more_exitAccount_btn" -->
+    <!-- android:layout_width="fill_parent" -->
+    <!-- android:layout_height="fill_parent" -->
+    <!-- android:layout_gravity="center" -->
+    <!-- android:background="@drawable/moreitems_exit" -->
+    <!-- android:gravity="center" -->
+    <!-- android:text="退出当前账号 " -->
+    <!-- android:textColor="@android:color/white" -->
+    <!-- android:textSize="18dip" /> -->
+    <!-- </LinearLayout> -->
+    <!-- </LinearLayout> -->
+    <!-- </LinearLayout> -->
+    <!-- </ScrollView> -->
+
+
+    <!-- <ScrollView -->
+    <!-- android:id="@+id/scrMore0" -->
+    <!-- android:layout_width="fill_parent" -->
+    <!-- android:layout_height="fill_parent" -->
+    <!-- android:layout_weight="1" -->
+    <!-- android:paddingBottom="9.0dip" -->
+    <!-- android:paddingLeft="4.5dip" -->
+    <!-- android:paddingRight="9.0dip" -->
+    <!-- android:paddingTop="9.0dip" -->
+    <!-- android:scrollbars="none" > -->
+
+
+    <!-- <LinearLayout -->
+    <!-- android:layout_width="fill_parent" -->
+    <!-- android:layout_height="fill_parent" -->
+    <!-- android:gravity="center_horizontal" -->
+    <!-- android:orientation="vertical" > -->
+
+
+    <!-- <LinearLayout -->
+    <!-- android:layout_width="fill_parent" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:background="@drawable/more_item_bg" -->
+    <!-- android:clickable="true" -->
+    <!-- android:gravity="center" -->
+    <!-- android:orientation="vertical" -->
+    <!-- android:paddingTop="0.0dip" > -->
+
+
+    <!-- <LinearLayout -->
+    <!-- android:id="@+id/more_youjia_Layout" -->
+    <!-- android:layout_width="fill_parent" -->
+    <!-- android:layout_height="62px" -->
+    <!-- android:gravity="center" -->
+    <!-- android:orientation="horizontal" > -->
+
+
+    <!-- <ImageView -->
+    <!-- android:id="@+id/more_youjia_igv" -->
+    <!-- android:layout_width="63px" -->
+    <!-- android:layout_height="62px" -->
+    <!-- android:src="@drawable/moreitems_youjia" /> -->
+
+
+    <!-- <TextView -->
+    <!-- android:id="@+id/more_youjia_tv" -->
+    <!-- style="@style/userinfo_panel_textview_title" -->
+    <!-- android:layout_width="fill_parent" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_weight="1.0" -->
+    <!-- android:gravity="center_vertical" -->
+    <!-- android:text="@string/more_center_youjia" -->
+    <!-- android:textColor="@android:color/white" /> -->
+
+
+    <!-- <ImageView -->
+    <!-- android:id="@+id/more_accountManage_go_igv" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:src="@drawable/moreitems_go" /> -->
+    <!-- </LinearLayout> -->
+    <!-- </LinearLayout> -->
+
+
+    <!-- <LinearLayout -->
+    <!-- android:layout_width="fill_parent" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:background="@drawable/more_item_bg" -->
+    <!-- android:clickable="true" -->
+    <!-- android:gravity="center" -->
+    <!-- android:orientation="vertical" -->
+    <!-- android:paddingTop="0.0dip" > -->
+
+
+    <!-- <LinearLayout -->
+    <!-- android:id="@+id/more_feedBack_Layout" -->
+    <!-- android:layout_width="fill_parent" -->
+    <!-- android:layout_height="62px" -->
+    <!-- android:gravity="center" -->
+    <!-- android:orientation="horizontal" > -->
+
+
+    <!-- <ImageView -->
+    <!-- android:id="@+id/more_feedBack_igv" -->
+    <!-- android:layout_width="63px" -->
+    <!-- android:layout_height="62px" -->
+    <!-- android:src="@drawable/moreitems_feedback_icon" /> -->
+
+
+    <!-- <TextView -->
+    <!-- android:id="@+id/more_feedBackContent_tv" -->
+    <!-- style="@style/userinfo_panel_textview_title" -->
+    <!-- android:layout_width="fill_parent" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_weight="1.0" -->
+    <!-- android:gravity="center_vertical" -->
+    <!-- android:text="@string/more_center_msgs" -->
+    <!-- android:textColor="@android:color/white" /> -->
+
+
+    <!-- <ImageView -->
+    <!-- android:id="@+id/more_accountManage_go_igv" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:src="@drawable/moreitems_go" /> -->
+    <!-- </LinearLayout> -->
+    <!-- </LinearLayout> -->
+
+
+    <!-- <LinearLayout -->
+    <!-- android:layout_width="fill_parent" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:background="@drawable/more_item_bg" -->
+    <!-- android:clickable="true" -->
+    <!-- android:gravity="center" -->
+    <!-- android:orientation="vertical" -->
+    <!-- android:paddingTop="0.0dip" > -->
+
+
+    <!-- <LinearLayout -->
+    <!-- android:id="@+id/more_warm_Layout" -->
+    <!-- android:layout_width="fill_parent" -->
+    <!-- android:layout_height="62px" -->
+    <!-- android:gravity="center" -->
+    <!-- android:orientation="horizontal" > -->
+
+
+    <!-- <ImageView -->
+    <!-- android:id="@+id/more_warm_igv" -->
+    <!-- android:layout_width="63px" -->
+    <!-- android:layout_height="62px" -->
+    <!-- android:src="@drawable/moreitems_warm_icon" /> -->
+
+
+    <!-- <TextView -->
+    <!-- android:id="@+id/more_warmContent_tv" -->
+    <!-- style="@style/userinfo_panel_textview_title" -->
+    <!-- android:layout_width="fill_parent" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_weight="1.0" -->
+    <!-- android:gravity="center_vertical" -->
+    <!-- android:text="@string/more_center_warm" -->
+    <!-- android:textColor="@android:color/white" /> -->
+
+
+    <!-- <ImageView -->
+    <!-- android:id="@+id/more_accountManage_go_igv" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:src="@drawable/moreitems_go" /> -->
+    <!-- </LinearLayout> -->
+    <!-- </LinearLayout> -->
+
+
+    <!-- <LinearLayout -->
+    <!-- android:layout_width="fill_parent" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:background="@drawable/more_item_bg" -->
+    <!-- android:clickable="true" -->
+    <!-- android:gravity="center" -->
+    <!-- android:orientation="vertical" -->
+    <!-- android:paddingTop="0.0dip" -->
+    <!-- android:visibility="gone" > -->
+
+
+    <!-- <LinearLayout -->
+    <!-- android:id="@+id/more_skinList_Layout" -->
+    <!-- android:layout_width="fill_parent" -->
+    <!-- android:layout_height="62px" -->
+    <!-- android:gravity="center" -->
+    <!-- android:orientation="horizontal" > -->
+
+
+    <!-- <ImageView -->
+    <!-- android:id="@+id/more_skinList_igv" -->
+    <!-- android:layout_width="63px" -->
+    <!-- android:layout_height="62px" -->
+    <!-- android:src="@drawable/moreitems_skin_icon" /> -->
+
+
+    <!-- <ImageView -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="fill_parent" -->
+    <!-- android:layout_marginLeft="5.0dip" -->
+    <!-- android:paddingRight="15.0dip" -->
+    <!-- android:src="@drawable/cut_bg" /> -->
+
+
+    <!-- <TextView -->
+    <!-- android:id="@+id/more_skinListContent_tv" -->
+    <!-- style="@style/userinfo_panel_textview_title" -->
+    <!-- android:layout_width="fill_parent" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_weight="1.0" -->
+    <!-- android:gravity="center_vertical" -->
+    <!-- android:text="换主题" -->
+    <!-- android:textColor="@android:color/white" /> -->
+
+
+    <!-- <ImageView -->
+    <!-- android:id="@+id/more_accountManage_go_igv" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:src="@drawable/moreitems_go" /> -->
+    <!-- </LinearLayout> -->
+    <!-- </LinearLayout> -->
+
+
+    <!-- <LinearLayout -->
+    <!-- android:layout_width="fill_parent" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:background="@drawable/more_item_bg" -->
+    <!-- android:clickable="true" -->
+    <!-- android:gravity="center" -->
+    <!-- android:orientation="vertical" -->
+    <!-- android:paddingTop="0.0dip" > -->
+
+
+    <!-- <LinearLayout -->
+    <!-- android:id="@+id/more_moreAbout_Layout" -->
+    <!-- android:layout_width="fill_parent" -->
+    <!-- android:layout_height="62px" -->
+    <!-- android:gravity="center" -->
+    <!-- android:orientation="horizontal" > -->
+
+
+    <!-- <ImageView -->
+    <!-- android:id="@+id/more_about_igv" -->
+    <!-- android:layout_width="63px" -->
+    <!-- android:layout_height="62px" -->
+    <!-- android:src="@drawable/moreitems_about_icon" /> -->
+
+
+    <!-- <TextView -->
+    <!-- android:id="@+id/more_aboutContent_tv" -->
+    <!-- style="@style/userinfo_panel_textview_title" -->
+    <!-- android:layout_width="fill_parent" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_weight="1.0" -->
+    <!-- android:gravity="center_vertical" -->
+    <!-- android:text="@string/more_center_about" -->
+    <!-- android:textColor="@android:color/white" /> -->
+
+
+    <!-- <ImageView -->
+    <!-- android:id="@+id/more_accountManage_go_igv" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:src="@drawable/moreitems_go" /> -->
+    <!-- </LinearLayout> -->
+    <!-- </LinearLayout> -->
+    <!-- </LinearLayout> -->
+    <!-- </ScrollView> -->
+
+    <GridView
+        android:id="@+id/more_grid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="20px"
+        android:layout_marginTop="12px"
+        android:listSelector="@drawable/list_selector"
+        android:numColumns="2"
+        android:scrollbars="none" >
+    </GridView>
+
+</LinearLayout>

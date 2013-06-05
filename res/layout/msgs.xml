@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+
+        <!-- <Button -->
+        <!-- android:id="@+id/button1" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_alignParentBottom="true" -->
+        <!-- android:layout_alignParentLeft="true" -->
+        <!-- android:onClick="testNotify" -->
+        <!-- android:text="测试一个通知" /> -->
+
+    <LinearLayout
+        android:id="@+id/msgs_main"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0"
+        android:orientation="vertical" >
+
+
+        <TextView
+            android:id="@+id/android:empty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="没有消息！"
+            android:textColor="#FFF"
+            android:visibility="gone" />
+
+        <ListView
+            android:id="@+id/msg_listview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:cacheColorHint="#E9E9E9"
+            android:divider="#E9E9E9"
+            android:dividerHeight="0dip"
+            android:transcriptMode="alwaysScroll" />
+        <!-- android:stackFromBottom="true" -->
+
+    </LinearLayout>
+    <!-- </LinearLayout> -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65px"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_marginLeft="30dp"
+         >
+
+
+        <EditText
+            android:id="@+id/msgs_txt_feecback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/enter_kuang_bg"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:textColor="#FFF"
+            android:layout_weight="1"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/msgs_btn_send"
+            android:layout_width="72px"
+            android:layout_height="41px"
+            android:layout_margin="7px"
+            android:background="@drawable/btn_submit"
+            android:text="发送"
+            android:layout_marginRight="10dp"
+            android:textColor="#fff" />
+    </LinearLayout>
+
+</LinearLayout>

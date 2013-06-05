@@ -1,0 +1,138 @@
+<!--
+  Copyright 2011 Google Inc.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+<resources>
+
+    <!-- body content -->
+    <dimen name="body_padding_medium">10dp</dimen>
+    <dimen name="body_padding_large">10dp</dimen>
+    <!-- <dimen name="text_size_small">14sp</dimen> -->
+    <!-- <dimen name="text_size_medium">18sp</dimen> -->
+    <!-- <dimen name="text_size_large">18sp</dimen> -->
+    <!-- <dimen name="text_size_xlarge">18sp</dimen> -->
+    <dimen name="text_size_small">18sp</dimen>
+    <dimen name="text_size_medium">19.0dip</dimen>
+    <dimen name="text_size_large">24sp</dimen>
+    <dimen name="text_size_xlarge">24sp</dimen>
+    <dimen name="speaker_image_size">36dp</dimen>
+    <dimen name="speaker_image_padding">8dp</dimen>
+    <dimen name="vendor_image_size">100dp</dimen>
+    <dimen name="actionbar_height">54px</dimen>
+    <dimen name="actionbar_title_margin_bottom">10dip</dimen>
+
+    <!-- <dimen name="actionbar_height">45dip</dimen> -->
+    <!-- <dimen name="actionbar_item_height">45dip</dimen> -->
+    <!-- <dimen name="actionbar_item_width">45dip</dimen> -->
+    <dimen name="actionbar_item_height">45dip</dimen>
+    <dimen name="actionbar_item_width">45dip</dimen>
+    <dimen name="svcs_center_size">342px</dimen>
+    <dimen name="rmct_record_text_size">16dip</dimen>
+
+    <!-- 閫氱敤 -->
+
+    <dimen name="layout_margin_size">22px</dimen>
+    <dimen name="info_margin_size_10">10px</dimen>
+    <dimen name="info_margin_size_15">15px</dimen>
+    <dimen name="info_margin_size_20">20px</dimen>
+    <dimen name="info_margin_size_30">30px</dimen>
+    <dimen name="info_margin_size_40">40px</dimen>
+    <dimen name="info_margin_size_60">60px</dimen>
+
+    <!-- 车管家 -->
+    <dimen name="info_ssdata_daily_travel">22sp</dimen>
+    <dimen name="info_ssdata_daily_travel_num">50sp</dimen>
+    <dimen name="info_ssdata_daily_travel_num_unit">35sp</dimen>
+    <dimen name="info_ssdata_daily_oil">22sp</dimen>
+    <dimen name="info_ssdata_daily_oil_num">50sp</dimen>
+    <dimen name="info_ssdata_daily_oil_num_unit">35sp</dimen>
+    <!-- <dimen name="info_ssdata_mile_unit">20sp</dimen> -->
+    <dimen name="info_ssdata_mile_unit">12px</dimen>
+    <!-- <dimen name="info_ssdata_mile_bc_lbl">18sp</dimen> -->
+    <dimen name="info_ssdata_mile_bc_lbl">10px</dimen>
+<!--     <dimen name="info_ssdata_mile_bc_num">25sp</dimen> -->
+
+      <dimen name="info_ssdata_mile_bc_num">16px</dimen>
+    <!-- 18sp -->
+    <dimen name="info_ssdata_mile_daily_lbl">10px</dimen>
+<!--     <dimen name="info_ssdata_mile_daily_num">25sp</dimen> -->
+    <dimen name="info_ssdata_mile_daily_num">16px</dimen>
+
+    <!-- <dimen name="info_ssdata_mile_total_lbl">18sp</dimen> -->
+    <dimen name="info_ssdata_mile_total_lbl">10px</dimen>
+<!--     <dimen name="info_ssdata_mile_total_num">25sp</dimen> -->
+
+    <dimen name="info_ssdata_mile_total_num">16px</dimen>
+<!--     18sp -->
+    <dimen name="info_ssdata_oil_unit">10px</dimen>
+<!--     20sp -->
+    <dimen name="info_ssdata_oil_sc_num">12px</dimen>
+<!--     20sp -->
+    <dimen name="info_ssdata_oil_bc_num">12px</dimen>
+<!--     20sp -->
+    <dimen name="info_ssdata_oil_daily_num">12px</dimen>
+<!--     20sp -->
+    <dimen name="info_ssdata_oil_total_num">12px</dimen>
+    <dimen name="info_ssdata_time_bc">12px</dimen>
+    <dimen name="info_ssdata_time_daily">12px</dimen>
+    <dimen name="info_ssdata_time_total">12px</dimen>
+    <dimen name="info_ssdata_time_bc_num">12px</dimen>
+    <dimen name="info_ssdata_time_daily_num">12px</dimen>
+    <dimen name="info_ssdata_time_total_num">12px</dimen>
+    <dimen name="info_ssdata_time_hour_unit">8px</dimen>
+    <dimen name="info_ssdata_time_mintue_unit">8px</dimen>
+    <!-- 记录-位置 -->
+    <dimen name="info_ssdata_record_count_bg_r">5px</dimen>
+    <dimen name="info_ssdata_record_bg_t">10dp</dimen>
+    <dimen name="info_ssdata_record_bg_b">25dp</dimen>
+    <dimen name="info_ssdata_record_pos_b">50dp</dimen>
+    <dimen name="info_ssdata_record_pos_l">27dp</dimen>
+    <dimen name="info_ssdata_record_pos_r">24dp</dimen>
+    <dimen name="info_ssdata_record_pos_start">12sp</dimen>
+    <dimen name="info_ssdata_record_pos_end">12sp</dimen>
+
+    <!-- 记录-时间 -->
+    <dimen name="info_ssdata_record_time_month_l">8dp</dimen>
+    <dimen name="info_ssdata_record_time_start">-13dp</dimen>
+    <dimen name="info_ssdata_record_time">10dp</dimen>
+    <dimen name="info_ssdata_record_time_month_size">8sp</dimen>
+    <dimen name="info_ssdata_record_time_date_size">20sp</dimen>
+    <dimen name="info_ssdata_record_time_s_size">12sp</dimen>
+    <dimen name="info_ssdata_record_time_start_size">25sp</dimen>
+    <dimen name="info_ssdata_record_time_e_size">12sp</dimen>
+    <dimen name="info_ssdata_record_time_end_size">25sp</dimen>
+    <dimen name="info_ssdata_record_time_size">18sp</dimen>
+
+    <!-- 记录-油耗 -->
+    <dimen name="info_ssdata_record_oil_count">-5dp</dimen>
+    <dimen name="info_ssdata_record_oil_flag">10dp</dimen>
+    <dimen name="info_ssdata_record_oil_count_size">12sp</dimen>
+    <dimen name="info_ssdata_record_oil_c_size">20sp</dimen>
+    <dimen name="info_ssdata_record_oil_unit_size">18sp</dimen>
+    <dimen name="info_ssdata_record_oil_unit_size_">12sp</dimen>
+    <dimen name="info_ssdata_record_oil_pay_size">12sp</dimen>
+    <dimen name="info_ssdata_record_oil_p_size">18sp</dimen>
+
+    <!-- 记录  里程数 -->
+    <dimen name="info_record_item_map_mile_size">15sp</dimen>
+    <dimen name="info_record_item_map_mile">18sp</dimen>
+
+    <!-- 记录-时速，地图 -->
+    <dimen name="info_record_item_map_speed">-13dp</dimen>
+    <dimen name="info_record_item_map_speed_size">16sp</dimen>
+    <dimen name="info_record_item_map_speed_unit_size">10sp</dimen>
+    <dimen name="info_record_item_map_speed_max_size">16sp</dimen>
+    <dimen name="info_record_item_map_play_size">10sp</dimen>
+
+</resources>

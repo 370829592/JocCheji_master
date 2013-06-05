@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/doc_dcxsjl_item_bg"
+    android:layout_margin="10dp"
+    android:orientation="vertical" 
+    >
+
+
+        <TextView
+            android:id="@+id/info_record_item_date"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="25dp"
+            android:layout_gravity="center_vertical"
+            android:text="消费记录"
+            android:textColor="#FFF"
+            android:layout_marginLeft="15dp"
+            android:textSize="25dip" />
+    
+        <TextView 
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#01424b"
+            />
+
+            <LinearLayout
+                android:id="@+id/info_record_item_rlt_tuition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="20dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/info_record_item_tuition"
+                    android:textColor="#00e1f1"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/info_record_item_tuition"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="8dp"
+                    android:text="@string/app_null"
+                    android:textColor="#00e1f1"
+                    android:textSize="20dp" />
+            </LinearLayout>
+
+             <TextView 
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#01424b"
+            />
+            
+            <LinearLayout
+                android:id="@+id/info_record_item_rlt_numofkm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp" android:layout_marginLeft="20dp"
+                android:layout_marginBottom="15dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/info_record_item_numofkm"
+                    android:textColor="#00e1f1"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/info_record_item_numofkm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_null"
+                    android:textColor="#00e1f1"
+                    android:paddingLeft="8dp"
+                    android:textSize="20dp" />
+            </LinearLayout>
+
+             <TextView 
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#01424b"
+            />
+            
+            <LinearLayout
+                android:id="@+id/info_record_item_rlt_content"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp" android:layout_marginLeft="20dp"
+                android:layout_marginBottom="15dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="保 养 内 容:"
+                    android:textColor="#00e1f1"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/info_record_item_content"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dp"
+                    android:text="@string/app_null"
+                    android:textColor="#00e1f1"
+                    android:paddingLeft="8dp"
+                    android:textSize="20dp" />
+            </LinearLayout>
+
+
+  
+             <TextView 
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#01424b"
+            />
+            
+
+        <LinearLayout
+            android:id="@+id/info_record_item_btn_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="15dp" 
+            android:layout_marginLeft="140dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/info_new"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="新建"
+                android:textColor="#fff"
+                android:background="@drawable/btn_new" />
+
+            <Button
+                android:id="@+id/info_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:text="修改"
+                 android:textColor="#fff"
+                android:background="@drawable/btn_new" />
+
+            <Button
+                android:id="@+id/info_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:text="删除"
+                 android:textColor="#fff"
+                android:background="@drawable/btn_new" />
+        </LinearLayout>
+
+</LinearLayout>

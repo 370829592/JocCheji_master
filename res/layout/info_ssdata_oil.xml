@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/info_ssdata_oil_icon_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/info_ssdata_oil_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/info_ssdata_oil" />
+
+        <TextView
+            android:id="@+id/info_ssdata_oil_unit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:text="@string/info_ssdata_oil_unit"
+            android:textColor="@color/info_ssdata_time_bc_num"
+            android:textSize="@dimen/info_ssdata_oil_unit" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/info_ssdata_oil_split"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/info_ssdata_oil_icon_layout"
+        android:src="@drawable/info_ssdata_seekbar_axi" />
+
+    <LinearLayout
+        android:id="@+id/info_ssdata_oil_data_layout"
+        android:layout_width="50dp"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="5dp"
+        android:orientation="vertical"
+        android:weightSum="4" >
+
+        <TextView
+            android:id="@+id/info_ssdata_oil_sc_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/info_ssdata_oil"
+            android:textColor="@color/info_ssdata_time_bc_num"
+             />
+
+        <TextView
+            android:id="@+id/info_ssdata_oil_bc_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/info_ssdata_oil"
+            android:textColor="@color/info_ssdata_time_bc_num" />
+
+        <TextView
+            android:id="@+id/info_ssdata_oil_bl_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/info_ssdata_oil"
+            android:textColor="@color/info_ssdata_time_bc_num" />
+
+        <TextView
+            android:id="@+id/info_ssdata_oil_total_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/info_ssdata_oil"
+            android:textColor="@color/info_ssdata_time_bc_num" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/info_ssdata_oil_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_toLeftOf="@id/info_ssdata_oil_data_layout"
+        android:layout_toRightOf="@id/info_ssdata_oil_split"
+        android:orientation="vertical"
+        android:weightSum="4" >
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1" >
+
+            <SeekBar
+                android:id="@+id/info_ssdata_oil_sc"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:max="3000"
+                android:maxHeight="20dp"
+                android:minHeight="20dp"
+                android:progressDrawable="@drawable/info_ssdata_seekbar_sc_img"
+                android:thumb="@drawable/thumb" />
+
+            <TextView
+                android:id="@+id/info_ssdata_oil_sc_lbl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/info_ssdata_oil_sc"
+                android:textColor="@color/info_ssdata_oil_sc"
+                />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1" >
+
+            <SeekBar
+                android:id="@+id/info_ssdata_oil_bc"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:max="3000"
+                android:maxHeight="20dp"
+                android:minHeight="20dp"
+                android:progressDrawable="@drawable/info_ssdata_seekbar_bc_img"
+                android:thumb="@drawable/thumb" />
+
+            <TextView
+                android:id="@+id/info_ssdata_oil_bc_lbl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/info_ssdata_oil_bc"
+                android:textColor="@color/info_ssdata_oil_bc"
+                />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1" >
+
+            <SeekBar
+                android:id="@+id/info_ssdata_oil_bl"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:max="3000"
+                android:maxHeight="20dp"
+                android:minHeight="20dp"
+                android:progressDrawable="@drawable/info_ssdata_seekbar_bl_img"
+                android:thumb="@drawable/thumb" />
+
+            <TextView
+                android:id="@+id/info_ssdata_oil_bl_lbl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                android:text="@string/info_ssdata_oil_bl"
+                android:textColor="@color/info_ssdata_oil_bl"
+                />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1" >
+
+            <SeekBar
+                android:id="@+id/info_ssdata_oil_total"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:max="3000"
+                android:maxHeight="20dp"
+                android:minHeight="20dp"
+                android:progressDrawable="@drawable/info_ssdata_seekbar_total_img"
+                android:thumb="@drawable/thumb" />
+
+            <TextView
+                android:id="@+id/info_ssdata_oil_total_lbl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/info_ssdata_oil_total"
+                android:textColor="@color/info_ssdata_oil_total"
+                />
+        </FrameLayout>
+    </LinearLayout>
+
+</RelativeLayout>

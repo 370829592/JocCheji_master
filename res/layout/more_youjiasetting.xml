@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/clxx_bg"
+    android:layout_marginTop="40dp"
+    >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="65dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="油价"
+            android:textColor="#FFF"
+            android:textSize="18dip" />
+
+        <EditText
+            android:id="@+id/more_youjianumber_et"
+            style="@style/single_line_text_youjia"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="请输入油的价格" />
+
+        <TextView
+            android:layout_width="65dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="元/升"
+            android:textColor="#FFF"
+            android:textSize="18dip" />
+    </LinearLayout>
+
+</RelativeLayout>

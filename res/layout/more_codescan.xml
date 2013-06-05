@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/about_rel"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/center_bg"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="80dip"
+        android:background="@drawable/actionbar_bg"
+        android:orientation="horizontal"
+        android:paddingTop="6.0dip" >
+
+        <TextView
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_marginRight="3dip"
+            android:layout_weight="1"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/more_item_about"
+            android:textColor="@color/actionbar_title"
+            android:textSize="25.0sp" />
+
+        <Button
+            android:id="@+id/more_about_back"
+            android:layout_width="60px"
+            android:layout_height="60px"
+            android:layout_marginLeft="3dip"
+            android:layout_weight="1"
+            android:background="@drawable/btn_black"
+            android:text="返回"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="337dp"
+        android:layout_gravity="center"
+        android:background="@drawable/more_scan_canmre_bg"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/canmre" />
+        <Button android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40sp"
+            android:text="开始扫描"/>
+    </LinearLayout>
+
+</LinearLayout>

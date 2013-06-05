@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/center_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/info_insure_null_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="4px"
+            android:layout_marginTop="10px"
+            android:background="@drawable/brightness_progress_background" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="7px"
+                    android:layout_marginTop="7px"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/info_insure_policyd"
+                        android:textSize="24px" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/app_null"
+                        android:textColor="#FFF"
+                        android:textSize="24px" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="4px"
+                    android:background="@drawable/brightness_progress_background" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="7px"
+                    android:layout_marginTop="7px"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/info_insure_insured"
+                        android:textSize="24px" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/app_null"
+                        android:textColor="#FFF"
+                        android:textSize="24px" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="4px"
+                    android:background="@drawable/brightness_progress_background" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="7px"
+                    android:layout_marginTop="7px"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/info_insure_duetime"
+                        android:textSize="24px" />
+
+                    <TextView
+                        android:id="@+id/info_insure_item_duetime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/app_null"
+                        android:textColor="#FFF"
+                        android:textSize="24px" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="4px"
+                    android:background="@drawable/brightness_progress_background" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="7px"
+                    android:layout_marginTop="7px"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/info_insure_company"
+                        android:textSize="24px" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/app_null"
+                        android:textColor="#FFF"
+                        android:textSize="24px" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="4px"
+            android:background="@drawable/brightness_progress_background" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="7px"
+            android:layout_marginTop="7px"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/info_insure_content"
+                android:textSize="24px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_null"
+                android:textColor="#FFF"
+                android:textSize="24px" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="4px"
+            android:background="@drawable/brightness_progress_background" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7px"
+            android:layout_marginBottom="7px"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/info_insure_caretel"
+                android:textSize="24px" />
+
+            <Button
+                android:id="@+id/insure_telnumber"
+                android:layout_width="169px"
+                android:layout_height="wrap_content"
+                android:background="@drawable/info_insure_btn_tel"
+                android:text="4001681680"
+                android:textColor="#FFF"
+                android:visibility="gone" />
+        </LinearLayout>
+        <!--  -->
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="4px"
+            android:background="@drawable/brightness_progress_background" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/info_insure_lst_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:listSelector="@drawable/list_selector"
+        android:scrollbars="none"
+        android:visibility="gone" >
+    </ListView>
+
+</LinearLayout>

@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/xfjl_edit_bg"
+        android:orientation="vertical" >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/info_insure_rlt_policyno"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="10dp"
+                android:layout_marginTop="0dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="保单号"
+                    android:textColor="#fff"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/info_insure_edt_policyno"
+                    style="@style/single_line_text_box"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:digits="0123456789abcdefghigklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                    android:ems="10"
+                    android:hint="请输入保单号"
+                    android:textColor="#000"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="被保险人名称"
+                    android:textColor="#fff"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/info_insure_edt_owner"
+                    style="@style/single_line_text_box"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:ems="10"
+                    android:hint="请输入名称"
+                    android:textColor="#000"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_margin="10dp"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:id="@+id/info_insure_rlt_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/info_insure_lbl_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:text="投保日期"
+                        android:textColor="#FFF"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/info_insure_lbl_cong"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="3dp"
+                        android:layout_toRightOf="@+id/info_insure_lbl_date"
+                        android:text="从"
+                        android:textColor="#FFF"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/info_insure_edt_starttime"
+                        style="@style/single_line_text_box"
+                        android:layout_width="75dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="3dp"
+                        android:layout_toRightOf="@+id/info_insure_lbl_cong"
+                        android:editable="false"
+                        android:ems="10"
+                        android:hint="起始时间"
+                        android:paddingLeft="6dp"
+                        android:textColor="@color/rmct_carinf_txt_color"
+                        android:textSize="10sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="70dp"
+                        android:layout_toRightOf="@+id/info_insure_lbl_cong"
+                        android:src="@drawable/info_selete_icon" />
+
+                    <TextView
+                        android:id="@+id/info_insure_lbl_zhi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="2dp"
+                        android:layout_toRightOf="@+id/info_insure_edt_starttime"
+                        android:text="至"
+                        android:textColor="@color/rmct_carinf_lbl_color"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/info_insure_edt_endtime"
+                        style="@style/single_line_text_box"
+                        android:layout_width="75dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="2dp"
+                        android:layout_toRightOf="@+id/info_insure_lbl_zhi"
+                        android:editable="false"
+                        android:ems="10"
+                        android:hint="结束时间"
+                        android:paddingLeft="6dp"
+                        android:textColor="@color/rmct_carinf_txt_color"
+                        android:textSize="10sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="70dp"
+                        android:layout_toRightOf="@+id/info_insure_lbl_zhi"
+                        android:src="@drawable/info_selete_icon" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/info_insure_rtl_company"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                     >
+
+                    <TextView
+                        android:id="@+id/info_insure_lbl_company"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:text="投保公司名称"
+                        android:textColor="#FFF"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/info_insure_edt_company"
+                        style="@style/single_line_text_box"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="120dp"
+                        android:layout_toRightOf="@+id/info_insure_rtl_company"
+                        android:drawableRight="@drawable/info_selete_icon"
+                        android:editable="false"
+                        android:ems="10"
+                        android:hint="请选择保险公司"
+                        android:textColor="@color/rmct_carinf_txt_color"
+                        android:textSize="16sp"
+                        android:visibility="gone" />
+
+                    <EditText
+                        android:id="@+id/info_insure_edt_company_id"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone" />
+
+                    <Spinner
+                        android:id="@+id/info_company_spinner"
+                        style="@style/single_line_text_box"
+                        android:layout_width="150dp"
+                        android:layout_height="26dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="120dp"
+                        android:layout_toRightOf="@+id/info_insure_rtl_company"
+                        android:hint="请选择保险公司" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0.7dp"
+                android:layout_weight="1.0"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:background="@drawable/info_service_up_bg"
+                     >
+
+                    <TextView
+                        android:id="@+id/info_insure_tv_content"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:text="0项  投保内容  可选择"
+                        android:textColor="@color/rmct_carinf_tag_color"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rmct_carinf_rlt_insure"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/info_bg" >
+
+                    <ListView
+                        android:id="@+id/info_insure_type_list_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:cacheColorHint="#00000000"
+                        android:scrollbars="none" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                android:id="@+id/rmct_carinf_rlt_submit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                 android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                android:background="@drawable/info_service_down_bg"
+                >
+
+                <Button
+                    android:id="@+id/rmct_carinf_btn_submit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rmct_carinf_rlt_submit"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="300dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/btn_submit"
+                    android:textColor="#000"
+                    android:text="确定"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+            </LinearLayout>
+
+            
+        </LinearLayout>
+        <!-- </ScrollView> -->
+    </RelativeLayout>
+
+</LinearLayout>

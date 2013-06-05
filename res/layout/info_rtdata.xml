@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/info_rt_bg" >
+
+    <com.icalinks.mobile.widget.DashboardView
+        android:id="@+id/info_rt_rt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        defRotation="56"
+        max="240"
+        maxRotation="328"
+        min="0"
+        minRotation="56"
+        srcDial="@drawable/info_rt_rt"
+        srcNeedle="@drawable/info_rt_rt_needle"
+        srcNeedleBoot="@drawable/info_rt_rt_needle_boot" />
+
+    <com.icalinks.mobile.widget.DashboardView
+        android:id="@+id/info_rt_ins_oil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="30px"
+        android:layout_marginTop="48px"
+        defRotation="53"
+        max="20"
+        maxRotation="280"
+        min="0"
+        minRotation="53"
+        srcDial="@drawable/info_rt_ins_oil"
+        srcNeedle="@drawable/info_rt_ins_oil_needle"
+        srcNeedleBoot="@drawable/info_rt_ins_oil_boot" />
+
+    <com.icalinks.mobile.widget.DashboardView
+        android:id="@+id/info_rt_eng_speed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="18px"
+        android:layout_marginLeft="54px"
+        defRotation="90"
+        max="8"
+        maxRotation="270"
+        min="0"
+        minRotation="90"
+        srcDial="@drawable/info_rt_eng_speed"
+        srcNeedle="@drawable/info_rt_eng_speed_needle"
+        srcNeedleBoot="@drawable/info_rt_eng_speed_boot" />
+
+    <com.icalinks.mobile.widget.DashboardView
+        android:id="@+id/info_rt_eng_temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="20px"
+        android:layout_marginRight="20px"
+        defRotation="45"
+        max="120"
+        maxRotation="315"
+        min="0"
+        minRotation="45"
+        srcDial="@drawable/info_rt_eng_temp"
+        srcNeedle="@drawable/info_rt_eng_temp_needle"
+        srcNeedleBoot="@drawable/info_rt_eng_temp_boot" />
+
+</RelativeLayout>

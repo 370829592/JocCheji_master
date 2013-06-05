@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- app -->
+    <string name="app_name">金橙车管家</string>
+    <string name="sd_noll">请先插入存储卡，再进入</string>
+    <string name="menu_about">关于</string>
+    <string name="menu_msgs">消息中心</string>
+    <string name="menu_sets">设置</string>
+    <string name="menu_exit">退出</string>
+    <string name="dialog_exit_title">退出确认</string>
+    <string name="dialog_exit_message">你确定要退出系统吗？</string>
+    <string name="dialog_exit_positive">确定</string>
+    <string name="dialog_exit_negative">取消</string>
+    <string name="dialog_about_finish">确定</string>
+    <string name="about_content">这里找凯伦写产品介绍！</string>
+    <string name="actionbar_activity_not_found">打开Activity失败</string>
+    <string name="dialog_nonet_title">温馨提示</string>
+    <string name="dialog_nonet_message">您的网络不可用，点击“确定”检查网络配置！ </string>
+    <string name="dialog_nonet_positive">取消</string>
+    <string name="dialog_nonet_negative">确定</string>
+    <string name="dialog_nogps_title">温馨提示</string>
+    <string name="dialog_nogps_message">您的GPS没有打开，这会导致定位不准，点击“确定”配置GPS！ </string>
+    <string name="dialog_nogps_positive">取消</string>
+    <string name="dialog_nogps_negative">确定</string>
+    <string name="dialog_nologin_title">温馨提示</string>
+    <string name="dialog_nologin_message">您还没有登录,请登录后使用！</string>
+    <string name="dialog_nologin_positive">暂不登录</string>
+    <string name="dialog_nologin_negative">立即登录</string>
+    <string name="app_null">无</string>
+    <string name="dialog_upgrade_positive">稍后升级</string>
+    <string name="dialog_upgrade_negative">立即升级</string>
+    <string name="dialog_upgrade_title">升级</string>
+    <string name="toast_feedback_null">请输入反馈内容！</string>
+    <string name="toast_feedback_success">提交成功，感谢您的反馈！</string>
+    <string name="toast_rmct_center_error">网络连接超时！</string>
+    <string name="toast_not_logged_operation_alert">请在登录后执行此操作!</string>
+
+    <!-- //~ -->
+
+
+    <!-- home -->
+    <string name="home_btn_svcs">汽车秘书</string>
+    <string name="home_btn_info">汽车医生</string>
+    <string name="home_btn_rmct">汽车卫士</string>
+    <string name="home_btn_more">更多</string>
+    <!-- //~ -->
+
+    <string name="msgs_title">消息中心</string>
+    <string name="msgs_record_title">历史消息</string>
+
+    <!-- 服务中心 -->
+    <string name="svcs_center_title">服务中心</string>
+    <string name="svcs_callup_title">正在通话</string>
+    <string name="svcs_nearby_title">爱购联盟</string>
+    <string name="svcs_routes_title">导航地图</string>
+    <string name="svcs_record_title">导航历史</string>
+    <string name="svcs_record_item_none">您还没有使用过一键导航！</string>
+
+    <!-- //~ -->
+
+
+    <!-- 车管家 -->
+
+
+    <!-- public >> -->
+    <string name="rtdata_item_txt_num1">0</string>
+    <string name="rtdata_item_txt_num2">0</string>
+    <string name="rtdata_item_txt_num3">0.0</string>
+    <string name="rtdata_item_txt_num4">0.0</string>
+    <string name="rtdata_item_txt_num5">0</string>
+    <string name="rtdata_item_txt_num6">0</string>
+    <!-- /~public -->
+    <string name="info_rtdata">实时数据</string>
+    <string name="info_ssdata">统计数据</string>
+    <string name="info_single">单日行驶记录</string>
+    <string name="info_status">汽车故障检测</string>
+    <string name="info_record">消费记录</string>
+    <string name="info_insure">查询保险</string>
+    <string name="info_record_item_content">保     养     内     容:</string>
+    <string name="info_record_item_tuition">　本次消费:</string>
+    <string name="info_record_item_numofkm">保养公里数:</string>
+    <string name="info_status_nodata">您的爱车目\n前状态良好</string>
+    <string name="info_status_tel_lbl">联系4S店</string>
+    <string name="info_status_yesdata">您的爱车出现一些故障请尽快联系4S店维修人员协助解决</string>
+    <string name="info_status_4s_null">你目前没有设置4S店电话号码</string>
+    <string name="info_status_4s">电话号码:</string>
+    <string name="info_sstaus_4s_hint">请输入4S店电话号码</string>
+    <string name="info_status_result">检测结果</string>
+    <string name="info_insure_policyd_">保险单号:</string>
+    <string name="info_insure_policyd">保险单号:</string>
+    <string name="info_insure_insured">被保险人:</string>
+    <string name="info_insure_company">投保公司:</string>
+    <string name="info_insure_content">投保内容:</string>
+    <string name="info_insure_duetime">保险期限:</string>
+    <string name="info_insure_caretel">保险客服电话:</string>
+    <string name="info_ssdata_daily_travel">日行程次数</string>
+    <string name="info_ssdata_daily_travel_num">0</string>
+    <string name="info_ssdata_daily_travel_num_unit">次</string>
+    <string name="info_ssdata_daily_oil">日油耗费用</string>
+    <string name="info_ssdata_daily_oil_num">0</string>
+    <string name="info_ssdata_daily_oil_num_unit">元</string>
+    <string name="info_ssdata_mile_unit">公里</string>
+    <string name="info_ssdata_mile_bc">本次行驶里程</string>
+    <string name="info_ssdata_mile_daily">　日行驶里程</string>
+    <string name="info_ssdata_mile_total">　总行驶里程</string>
+    <string name="info_ssdata_oil_unit">升/百公里</string>
+    <string name="info_ssdata_mile">0</string>
+    <string name="info_ssdata_oil_sc">上次行驶平均油耗</string>
+    <string name="info_ssdata_oil_bc">本次行驶平均油耗</string>
+    <string name="info_ssdata_oil_bl">日百公里平均油耗</string>
+    <string name="info_ssdata_oil_total">总百公里平均油耗</string>
+    <string name="info_ssdata_oil">0.00</string>
+    <string name="info_ssdata_time">00</string>
+    <string name="info_ssdata_time_">00000</string>
+    <string name="info_ssdata_time_hour_unit">时</string>
+    <string name="info_ssdata_time_mintue_unit">分</string>
+    <string name="info_ssdata_time_split">:</string>
+    <string name="info_ssdata_time_bc">本次行驶时间</string>
+    <string name="info_ssdata_time_daily">日驾驶时间</string>
+    <string name="info_ssdata_time_total">总驾驶时间</string>
+    <string name="info_ssdata_time_hour">0</string>
+    <string name="info_record_times">1</string>
+    <string name="info_recored_item_pos_start">起点</string>
+    <string name="info_recored_item_pos_end">终点</string>
+    <string name="info_ssdata_record">单日行驶记录</string>
+    <string name="info_ssdata_record_null">今日暂无开车记录</string>
+
+    <!-- 记录-时间 -->
+    <string name="info_ssdata_record_time_month">一</string>
+    <string name="info_ssdata_record_time_date">00</string>
+    <string name="info_ssdata_record_time_start">开始时间</string>
+    <string name="info_ssdata_record_time_s">00:00</string>
+    <string name="info_ssdata_record_time_end">结束时间</string>
+    <string name="info_ssdata_record_time_e">00:00</string>
+    <string name="info_ssdata_record_time_">行驶时长</string>
+    <string name="info_ssdata_record_time">00:00</string>
+
+    <!-- 记录-油耗 -->
+    <string name="info_ssdata_record_oil_c">油耗数量</string>
+    <string name="info_ssdata_record_oil_count">1</string>
+    <string name="info_ssdata_record_oil_per">单次油耗</string>
+    <string name="info_ssdata_record_oil_p">油耗费用</string>
+    <string name="info_ssdata_record_oil_pay">0.0</string>
+    <string name="info_ssdata_record_oil_pay_unit">元</string>
+    <string name="info_ssdata_record_date">选择日期</string>
+    <string name="info_ssdata_oil_unit_">升(L)</string>
+
+    <!-- 记录 -里程数 -->
+    <string name="info_ssdata_record_mile_value">00</string>
+    <string name="info_ssdata_record_mile_unit">公里</string>
+    <string name="info_ssdata_record_mile">本次行驶里程数</string>
+
+    <!-- 记录-时速，地图 -->
+    <string name="info_ssdata_record_item_map_speed">0</string>
+    <string name="info_ssdata_record_item_map_speed_unit">公里/h</string>
+    <string name="info_ssdata_record_item_map_speed_max">最高时速</string>
+    <string name="info_ssdata_record_item_map">轨\n迹\n回\n放</string>
+    <!-- //~ -->
+
+
+    <!-- 安防监控 -->
+    <!-- 安防监控-车辆信息 -->
+    <string name="rmct_carinf_title">车辆信息</string>
+    <string name="rmct_carinf_lbl_licenseplate">　车牌号：</string>
+    <string name="rmct_carinf_lbl_engineno">发动机号：</string>
+    <string name="rmct_carinf_lbl_frameno">　车架号：</string>
+    <string name="rmct_carinf_lbl_uxtid">　设备ID：</string>
+    <string name="rmct_carinf_lbl_uxtsim">  SIM卡号：</string>
+    <string name="rmct_carinf_lbl_emissions">汽车排量：</string>
+    <string name="rmct_carinf_lbl_license_date">驾照到期：</string>
+    <string name="rmct_carinf_lbl_examine_date">年审到期：</string>
+    <string name="rmct_carinf_lbl_status"> ACC状态：</string>
+    <string name="rmct_carinf_lbl_gpstime">定位时间：</string>
+    <string name="rmct_carinf_lbl_location">车辆位置：</string>
+    <string name="rmct_carinf_lbl_licenseplate_">　车牌号</string>
+    <string name="rmct_carinf_lbl_engineno_">发动机号</string>
+    <string name="rmct_carinf_lbl_frameno_">　车架号</string>
+    <string name="rmct_carinf_lbl_emissions_">汽车排量</string>
+    <string name="rmct_carinf_lbl_license_date_">驾照到期</string>
+    <string name="rmct_carinf_lbl_examine_date_">年审到期</string>
+    <string name="rmct_carinf_lbl_licenseplate_ed"> 请输入车牌号</string>
+    <string name="rmct_carinf_lbl_engineno_ed"> 请输入发动机号</string>
+    <string name="rmct_carinf_lbl_frameno_ed"> 请输入车架号</string>
+    <string name="rmct_carinf_lbl_emissions_ed"> 请输入汽车排量</string>
+    <string name="rmct_carinf_lbl_license_date_ed"> 请输入驾照到期日期</string>
+    <string name="rmct_carinf_lbl_examine_date_ed"> 请输入年审到期日期</string>
+
+    <!-- <string name="rmct_carinf_lbl_speed">　　速度</string> -->
+
+
+    <!-- 安防监控-远程控制 -->
+    <string name="rmct_center_title">远程控制</string>
+    <string name="rmct_center_opendoor">远程开锁</string>
+    <string name="rmct_center_shutdoor">远程关锁</string>
+    <string name="rmct_center_onoilele">远程开油电</string>
+    <string name="rmct_center_ofoilele">远程断油电</string>
+    <string name="rmct_center_ongarrison">开启电子围栏</string>
+    <string name="rmct_center_ofgarrison">关闭电子围栏</string>
+    <string name="rmct_center_poiprompt">停车位置提示</string>
+    <!-- <string name="rmct_center_oncoolair">冷气预开</string> -->
+    <!-- <string name="rmct_center_collisionalarm">碰撞报警设置</string> -->
+    <string name="rmct_center_verify">请输入6位数字密码</string>
+    <string name="rmct_center_verify_num001">1</string>
+    <string name="rmct_center_verify_num002">2</string>
+    <string name="rmct_center_verify_num003">3</string>
+    <string name="rmct_center_verify_num004">4</string>
+    <string name="rmct_center_verify_num005">5</string>
+    <string name="rmct_center_verify_num006">6</string>
+    <string name="rmct_center_verify_num007">7</string>
+    <string name="rmct_center_verify_num008">8</string>
+    <string name="rmct_center_verify_num009">9</string>
+    <string name="rmct_center_veryfy_delete">删除</string>
+    <string name="rmct_center_verify_num000">0</string>
+    <string name="rmct_center_verify_define">确定</string>
+    <string name="rmct_center_toast_rmctok">命令发送成功！</string>
+    <string name="rmct_center_toast_errpwd">安防密码不正确，请重新输入！</string>
+    <string name="rmct_center_toast_errpwdfmt">请输入6位数字密码！</string>
+    <!-- 安防监控-轨迹回放 -->
+    <string name="rmct_routes_title">轨迹回放</string>
+    <string name="rmct_routes_playback">回放时间</string>
+    <string name="datetime_begtime">起始时间</string>
+    <string name="datetime_endtime">结束时间</string>
+    <string name="datetime_picker_cancel">取消</string>
+    <string name="datetime_picker_submit">确定</string>
+    <string name="datetime_toast_nodata">车辆在该时间段内没有轨迹数据！</string>
+
+    <!-- 安防监控-最近操作 -->
+    <string name="rmct_record_title">最近操作</string>
+    <string name="rmct_record_tag">操作记录</string>
+    <string name="rmct_record_lbl_norecord">没有操作记录</string>
+    <!-- //～ -->
+
+
+    <!-- 更多 -->
+    <string name="more_item_4stel">4S店电话设置</string>
+    <string name="more_item_about">关  　  　  于</string>
+    <string name="more_item_rcpswd">汽车卫士设置</string>
+    <string name="more_item_fences">安全围栏设置</string>
+    <string name="more_item_msgs">信  息  中  心</string>
+    <string name="more_item_actmgr">车辆账户管理</string>
+    <string name="more_item_telnum">手机号码设置</string>
+    <string name="more_item_warm">温  馨  服  务</string>
+    <string name="more_item_youjia">油  价  设  置</string>
+
+    <!-- <string name="more_center_actmgr">车辆账号管理</string> -->
+    <!-- <string name="more_center_telnum">手机号码设置</string> -->
+    <!-- <string name="more_center_rmctpswd">安防密码设置</string> -->
+    <!-- <string name="more_center_fences">安全围栏设置</string> -->
+    <!-- <string name="more_center_msgs">消息中心</string> -->
+    <!-- <string name="more_center_warm">温馨服务</string> -->
+    <!-- <string name="more_center_youjia">油价设置</string> -->
+    <!-- <string name="more_center_scan">二维码扫描</string> -->
+    <!-- <string name="more_center_foursnumber">4S店电话设置</string> -->
+    <!-- <string name="more_center_about">关于凯伦圣</string> -->
+    <!-- <string name="more_actmgr_title">车辆账号</string> -->
+    <!-- <string name="more_center_telnum_title">手机号码</string> -->
+    <!-- <string name="more_center_rmctpswd_title">安防密码</string> -->
+    <string name="more_recarpwd_title">车辆密码</string>
+    <!-- <string name="more_center_fences_title">安全围栏</string> -->
+    <string name="more_login_title">添加账号</string>
+    <string name="more_actmdf_title">修改账号</string>
+    <!-- <string name="more_center_feedback_title">意见反馈</string> -->
+    <!-- <string name="more_center_about_title">关于凯伦圣</string> -->
+    <string name="account_empty">用户名为空，请重新输入！</string>
+    <string name="pwd_empty">密码为空，请重新输入！</string>
+    <string name="login_sucess">登陆成功！</string>
+    <!-- <string name="login_fail">登陆失败！请输入正确的用户名与密码！</string> -->
+    <string name="more_about_link"><a href="http://www.calinks.com.cn">http://www.calinks.com.cn </a></string>
+    <string name="more_about_version_lbl">金橙车管家</string>
+    <string name="more_about_verstatus_lasted">已是最新版本</string>
+    <string name="more_about_verstatus_update">目前最新版本：</string>
+    <string name="more_about_verstatus_download">点击下载</string>
+    <string name="more_about_checking">正在检查...</string>
+    <!-- 扫描二维码 -->
+
+    <string name="app_picker_name">应用</string>
+    <string name="bookmark_picker_name">书签</string>
+    <string name="button_add_calendar">添加事件至日历</string>
+    <string name="button_add_contact">添加联系人</string>
+    <string name="button_back">返回</string>
+    <string name="button_book_search">打开图书搜索</string>
+    <string name="button_cancel">取消</string>
+    <string name="button_clipboard_empty">清空剪切板</string>
+    <string name="button_custom_product_search">自定义搜索</string>
+    <string name="button_dial">拨号</string>
+    <string name="button_done">完成</string>
+    <string name="button_email">发送email</string>
+    <string name="button_get_directions">获取地址</string>
+    <string name="button_google_shopper">谷歌购物</string>
+    <string name="button_mms">发送彩信</string>
+    <string name="button_ok">确定</string>
+    <string name="button_open_browser">打开浏览器</string>
+    <string name="button_product_search">打开产品搜索</string>
+    <string name="button_search_book_contents">搜索图书内容</string>
+    <string name="button_share_app">共享应用</string>
+    <string name="button_share_bookmark">分享书签</string>
+    <string name="button_share_by_email">通过email分享</string>
+    <string name="button_share_by_sms">通过短信分享</string>
+    <string name="button_share_clipboard">分享剪切板</string>
+    <string name="button_share_contact">分享联系人</string>
+    <string name="button_show_map">显示地图</string>
+    <string name="button_sms">发送短信</string>
+    <string name="button_web_search">网页搜索</string>
+    <string name="button_wifi">连接到网络</string>
+    <string name="contents_contact">联系人信息</string>
+    <string name="contents_email">Email地址</string>
+    <string name="contents_location">地理坐标</string>
+    <string name="contents_phone">电话号码</string>
+    <string name="contents_sms">短信地址</string>
+    <string name="contents_text">纯文本</string>
+    <string name="history_clear_one_history_text">删除</string>
+    <string name="history_clear_text">删除历史</string>
+    <string name="history_email_title">条码扫描器历史</string>
+    <string name="history_empty">空的</string>
+    <string name="history_empty_detail">没有条码扫描已记录</string>
+    <string name="history_send">发送历史</string>
+    <string name="history_title">历史</string>
+    <string name="menu_encode_mecard">使用MECARD</string>
+    <string name="menu_encode_vcard">使用vCard</string>
+    <string name="menu_help">帮助</string>
+    <string name="menu_history">历史</string>
+    <string name="menu_settings">设置</string>
+    <string name="menu_share">分享</string>
+    <string name="msg_about">基于ZXing开源条码引擎</string>
+    <string name="msg_bulk_mode_scanned">批量扫描：找到条码，已保存</string>
+    <string name="msg_camera_framework_bug">抱歉，Android相机出现问题。您可能需要重启设备。</string>
+    <string name="msg_default_format">格式</string>
+    <string name="msg_default_meta">元数据</string>
+    <string name="msg_default_mms_subject">Hi</string>
+    <string name="msg_default_status">请将条码置于取景框内扫描。  </string>
+    <string name="msg_default_time">时间</string>
+    <string name="msg_default_type">类型</string>
+    <string name="msg_encode_contents_failed">无法根据已有数据生成条码。   </string>
+    <string name="msg_google_books">谷歌图书</string>
+    <string name="msg_google_product">谷歌购物</string>
+    <string name="msg_google_shopper_missing">谷歌购物未安装</string>
+    <string name="msg_install_google_shopper">谷歌购物是一款将条码扫描和商品比价相结合的应用，谷歌购物不使用浏览器，您想尝试吗？</string>
+    <string name="msg_intent_failed">抱歉，无法打开所需软件。 条码内容可能无效。</string>
+    <string name="msg_redirect">重定向</string>
+    <string name="msg_sbc_book_not_searchable">抱歉，无法找到此图书。</string>
+    <string name="msg_sbc_failed">抱歉，搜索时遇到错误。</string>
+    <string name="msg_sbc_no_page_returned">无页面返回</string>
+    <string name="msg_sbc_page">页面</string>
+    <string name="msg_sbc_searching_book">搜索图书…</string>
+    <string name="msg_sbc_snippet_unavailable">摘录不可用</string>
+    <string name="msg_sbc_unknown_page">未知页面</string>
+    <string name="msg_share_explanation">您可以通过在自己的手机上显示条码，并使用其它手机扫描此条码的方式进行分享</string>
+    <string name="msg_share_subject_line">这是我所扫描条码的内容</string>
+    <string name="msg_share_text">或键入一些文字</string>
+    <string name="msg_sure">你肯定吗？</string>
+    <string name="msg_unmount_usb">抱歉，SD卡不可访问。</string>
+    <string name="preferences_actions_title">找到条码时</string>
+    <string name="preferences_bulk_mode_summary">连续扫描并保存多个条形码</string>
+    <string name="preferences_bulk_mode_title">批量扫描模式</string>
+    <string name="preferences_copy_to_clipboard_title">复制到剪切板</string>
+    <string name="preferences_custom_product_search_summary" formatted="false">替换：％s=内容，％f=格式，％t=类型</string>
+    <string name="preferences_custom_product_search_title">自定义搜索网址</string>
+    <string name="preferences_decode_1D_title">扫描 一维条码</string>
+    <string name="preferences_decode_Data_Matrix_title">扫描 DM码</string>
+    <string name="preferences_decode_QR_title">扫描 QR码</string>
+    <string name="preferences_front_light_summary">前灯可用时，打开前灯</string>
+    <string name="preferences_front_light_title">前灯</string>
+    <string name="preferences_general_title">一般设置</string>
+    <string name="preferences_name">设置</string>
+    <string name="preferences_play_beep_title">提示音</string>
+    <string name="preferences_remember_duplicates_summary">在历史记录中保存重复记录</string>
+    <string name="preferences_remember_duplicates_title">记住重复</string>
+    <string name="preferences_result_title">结果设置</string>
+    <string name="preferences_reverse_image_summary">设备上启用了前置摄像头只</string>
+    <string name="preferences_reverse_image_title">反转摄像机的图像</string>
+    <string name="preferences_scanning_title">条码类型选择</string>
+    <string name="preferences_search_country">搜索国家</string>
+    <string name="preferences_supplemental_summary">尝试检索关于条码内容的更多信息</string>
+    <string name="preferences_supplemental_title">检索更多信息</string>
+    <string name="preferences_vibrate_title">振动</string>
+    <string name="result_address_book">找到联系人信息</string>
+    <string name="result_calendar">找到日历事件</string>
+    <string name="result_email_address">找到email地址</string>
+    <string name="result_geo">找到地理坐标</string>
+    <string name="result_isbn">找到图书</string>
+    <string name="result_product">找到产品</string>
+    <string name="result_sms">找到短信地址</string>
+    <string name="result_tel">找到电话号码</string>
+    <string name="result_text">找到纯文本</string>
+    <string name="result_uri">找到URL</string>
+    <string name="result_wifi">发现网络配置</string>
+    <string name="sbc_name">Google图书搜索</string>
+    <string name="share_name">通过条码分享</string>
+    <string name="title_about">条码扫描器</string>
+    <string name="wifi_changing_network">请求连接到网络\u2026</string>
+    <string name="wifi_ssid_label">网络SSID</string>
+    <string name="wifi_type_label">类型</string>
+    <string name="zxing_url">http://code.google.com/p/zxing</string>
+
+    <!-- //~ -->
+    <string name="more_about_text">　　金橙车管家是由凯伦圣科技与清华大学联合研发出品的智能车联网信息服务系统。该系统提供基于用户位置的云智能服务，用户通过手机即可获取爱车动态信息、安全提醒服务、行车秘书服务等多项贴心服务。\n\n　　金橙帮您科技驾驭，创造精彩人车生活！</string>
+
+    
+    <string name="doc_yhsj">汽车医生 - 油耗数据</string>
+    <string name="doc_actj">汽车医生 - 爱车体检</string>
+    <string name="doc_dcxsjl">汽车医生 - 单次行驶记录</string>
+    <string name="doc_xfjl">汽车医生 - 消费记录</string>
+    <string name="doc_tmps">汽车医生 - 胎压检测</string>
+    
+    <string name="ms_czb">汽车秘书 - 查周边</string>
+    <string name="ms_clxx">汽车秘书 - 车辆信息</string>
+    <string name="ms_dljy">汽车秘书 - 道路救援</string>
+    <string name="ms_djfw">汽车秘书 - 代驾服务</string>
+    <string name="ms_yjdh">汽车秘书 - 一键导航</string>
+    <string name="ms_xxzx">汽车秘书 - 信息中心</string>
+    <string name="ms_cxbx">汽车秘书 - 查询保险</string>
+    
+    <string name="gd_clzhgl">更多 - 车辆账户管理</string>
+    <string name="gd_4sddhsz">更多 - 4S店电话设置</string>
+    <string name="gd_bjhmsz">更多 - 本机号码设置</string>
+    <string name="gd_yjsz">更多 - 油价设置</string>
+    <string name="gd_wxfw">更多 - 温馨服务</string>
+    <string name="gd_gy">更多 - 关于</string>
+</resources>

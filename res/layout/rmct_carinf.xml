@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/center_bg"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="26dp"
+        android:paddingTop="30dp"
+        android:paddingBottom="23dp"
+        android:background="@drawable/clxx_bg"
+        android:scrollbarTrackVertical="@drawable/clxx_shuxian"
+        android:scrollbarThumbVertical="@drawable/clxx_jindutiao"
+        android:scrollbars="vertical"
+        
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/rmct_carinf_rlt_licenseplate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_margin_size"
+                android:layout_marginRight="@dimen/layout_margin_size"
+                android:layout_marginTop="10dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rmct_carinf_lbl_licenseplate"
+                    android:textColor="@color/rmct_carinf_lbl_color"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/rmct_carinf_lbl_licenseplate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="80dp"
+                    android:layout_toRightOf="@+id/rmct_carinf_rlt_licenseplate"
+                    android:text="@string/app_null"
+                    android:textColor="@color/rmct_carinf_txt_color"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rmct_carinf_rlt_engineno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_margin_size"
+                android:layout_marginRight="@dimen/layout_margin_size"
+                android:layout_marginTop="10dp" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rmct_carinf_lbl_engineno"
+                    android:textColor="@color/rmct_carinf_lbl_color"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/rmct_carinf_lbl_engineno"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="80dp"
+                    android:layout_toRightOf="@+id/rmct_carinf_rlt_engineno"
+                    android:text="@string/app_null"
+                    android:textColor="@color/rmct_carinf_txt_color"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rmct_carinf_rlt_frameno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_margin_size"
+                android:layout_marginRight="@dimen/layout_margin_size"
+                android:layout_marginTop="6dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rmct_carinf_lbl_frameno"
+                    android:textColor="@color/rmct_carinf_lbl_color"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/rmct_carinf_lbl_frameno"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="80dp"
+                    android:layout_toRightOf="@+id/rmct_carinf_rlt_frameno"
+                    android:text="@string/app_null"
+                    android:textColor="@color/rmct_carinf_txt_color"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rmct_carinf_rlt_uxtid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_margin_size"
+                android:layout_marginRight="@dimen/layout_margin_size"
+                android:layout_marginTop="6dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rmct_carinf_lbl_uxtid"
+                    android:textColor="@color/rmct_carinf_lbl_color"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/rmct_carinf_lbl_uxtid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="80dp"
+                    android:layout_toRightOf="@+id/rmct_carinf_rlt_uxtid"
+                    android:text="@string/app_null"
+                    android:textColor="@color/rmct_carinf_txt_color"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rmct_carinf_rlt_uxtsim"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_margin_size"
+                android:layout_marginRight="@dimen/layout_margin_size"
+                android:layout_marginTop="6dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rmct_carinf_lbl_uxtsim"
+                    android:textColor="@color/rmct_carinf_lbl_color"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/rmct_carinf_lbl_uxtsim"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="80dp"
+                    android:layout_toRightOf="@+id/rmct_carinf_rlt_uxtsim"
+                    android:text="@string/app_null"
+                    android:textColor="@color/rmct_carinf_txt_color"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rmct_carinf_rlt_license_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_margin_size"
+                android:layout_marginRight="@dimen/layout_margin_size"
+                android:layout_marginTop="6dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rmct_carinf_lbl_license_date"
+                    android:textColor="@color/rmct_carinf_lbl_color"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/rmct_carinf_lbl_license_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="80dp"
+                    android:layout_toRightOf="@+id/rmct_carinf_rlt_license_date"
+                    android:text="@string/app_null"
+                    android:textColor="@color/rmct_carinf_txt_color"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rmct_carinf_rlt_examine_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_margin_size"
+                android:layout_marginRight="@dimen/layout_margin_size"
+                android:layout_marginTop="6dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rmct_carinf_lbl_examine_date"
+                    android:textColor="@color/rmct_carinf_lbl_color"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/rmct_carinf_lbl_examine_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="80dp"
+                    android:layout_toRightOf="@+id/rmct_carinf_rlt_examine_date"
+                    android:text="@string/app_null"
+                    android:textColor="@color/rmct_carinf_txt_color"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rmct_carinf_rlt_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_margin_size"
+                android:layout_marginRight="@dimen/layout_margin_size"
+                android:layout_marginTop="6dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rmct_carinf_lbl_status"
+                    android:textColor="@color/rmct_carinf_lbl_color"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/rmct_carinf_lbl_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="80dp"
+                    android:layout_toRightOf="@+id/rmct_carinf_rlt_status"
+                    android:text="@string/app_null"
+                    android:textColor="@color/rmct_carinf_txt_color"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rmct_carinf_rlt_emissions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_margin_size"
+                android:layout_marginRight="@dimen/layout_margin_size"
+                android:layout_marginTop="6dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rmct_carinf_lbl_emissions"
+                    android:textColor="@color/rmct_carinf_lbl_color"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/rmct_carinf_lbl_emissions"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="80dp"
+                    android:layout_toRightOf="@+id/rmct_carinf_rlt_emissions"
+                    android:text="@string/app_null"
+                    android:textColor="@color/rmct_carinf_txt_color"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rmct_carinf_rlt_gpstime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_margin_size"
+                android:layout_marginRight="@dimen/layout_margin_size"
+                android:layout_marginTop="6dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/rmct_carinf_lbl_gpstime"
+                    android:textColor="@color/rmct_carinf_lbl_color"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/rmct_carinf_lbl_gpstime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="80dp"
+                    android:layout_toRightOf="@+id/rmct_carinf_rlt_gpstime"
+                    android:text="@string/app_null"
+                    android:textColor="@color/rmct_carinf_txt_color"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

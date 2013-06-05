@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical" >
+	<LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	    >
+	    <ListView 
+	        android:id="@+id/info_tmps_listview"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        />
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+	
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="25dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/info_tmps_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/info_temps_top_left_g" />
+
+                <ImageView
+                    android:id="@+id/info_tmps_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/info_temps_top_right_g" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/info_tmps_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/info_temps_bottom_left_g" />
+
+                <ImageView
+                    android:id="@+id/info_tmps_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/info_temps_bottom_right_g" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="72dp" >
+
+            <TextView
+                android:id="@+id/info_tmps_5"
+                android:layout_width="45dp"
+                android:layout_height="80dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="24dp"
+                android:text="慢漏 10KP 50℃   3V"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/info_tmps_6"
+                android:layout_width="45dp"
+                android:layout_height="80dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="250dp"
+                android:text="快漏 10KP 50℃   3V"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/info_tmps_7"
+                android:layout_width="45dp"
+                android:layout_height="80dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="200dp"
+                android:text="慢漏 10KP 50℃   3V"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/info_tmps_8"
+                android:layout_width="45dp"
+                android:layout_height="80dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="250dp"
+                android:layout_marginTop="200dp"
+                android:text="慢漏 10KP 50℃   3V"
+                android:textSize="11sp" />
+        </RelativeLayout>
+    </FrameLayout>
+	</LinearLayout>
+</ScrollView>

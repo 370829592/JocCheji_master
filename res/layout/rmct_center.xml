@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+android:background="@drawable/center_bg"
+    android:orientation="vertical" >
+
+    <!-- android:background="@drawable/main_center_bg" -->
+
+    <GridView
+        android:id="@+id/rmct_center_grd_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20px"
+        android:listSelector="@drawable/list_selector"
+        android:numColumns="3"
+        android:orientation="vertical"
+        android:scrollbars="none" >
+    </GridView>
+
+</LinearLayout>

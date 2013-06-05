@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/about_rel"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/center_bg"
+    android:gravity="center"
+    android:orientation="vertical" >
+    <!-- <LinearLayout -->
+    <!-- android:layout_width="fill_parent" -->
+    <!-- android:layout_height="80dip" -->
+    <!-- android:background="@drawable/actionbar_bg" -->
+    <!-- android:orientation="horizontal" -->
+    <!-- android:paddingTop="6.0dip" > -->
+
+
+    <!-- <Button -->
+    <!-- android:id="@+id/more_about_back" -->
+    <!-- android:layout_width="40dip" -->
+    <!-- android:layout_height="40dip" -->
+    <!-- android:layout_marginLeft="3dip" -->
+    <!-- android:layout_weight="1" -->
+    <!-- android:background="@drawable/btn_black" -->
+    <!-- android:text="返回" -->
+    <!-- android:textColor="@android:color/white" /> -->
+
+
+    <!-- <TextView -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_weight="1" -->
+    <!-- android:gravity="center" -->
+    <!-- android:text="@string/more_center_about_title" -->
+    <!-- android:textColor="@color/actionbar_title" -->
+    <!-- android:textSize="25.0sp" /> -->
+
+
+    <!-- <TextView -->
+    <!-- android:layout_width="40dip" -->
+    <!-- android:layout_height="40dip" -->
+    <!-- android:layout_marginRight="3dip" -->
+    <!-- android:layout_weight="1" -->
+    <!-- android:textColor="@android:color/white" /> -->
+    <!-- </LinearLayout> -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20px"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="437px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/about_bg"
+            android:paddingLeft="14px"
+            android:paddingRight="14px"
+            android:paddingTop="28px"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#2f2f2f" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="86px"
+                android:layout_height="159px"
+                android:background="@drawable/more_about_logo" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/more_about_version_lbl"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/more_about_version"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1.1.1111"
+                    android:textColor="#fe9508" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="160px"
+                android:layout_height="51px"
+                android:background="@drawable/about_button_01"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/more_about_verstatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/more_about_verstatus_lasted"
+                    android:textColor="@android:color/white"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/more_about_update"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/more_about_verstatus_download"
+                    android:textColor="@color/link_text"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2px"
+        android:gravity="center"
+        android:text="凯伦圣科技 版权所有  Copyright(c)2009～2012 Calinks Corporation. All Rights Reserved."
+        android:textColor="@android:color/white"
+        android:textSize="16px" />
+
+    <TextView
+        android:id="@+id/more_about_link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10px"
+        android:text="@string/more_about_link"
+        android:textColor="#fe9508"
+        android:textSize="12px" />
+
+</LinearLayout>
