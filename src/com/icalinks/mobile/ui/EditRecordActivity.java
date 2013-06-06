@@ -3,6 +3,7 @@ package com.icalinks.mobile.ui;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.calinks.vehiclemachine.model.db.dal.DoctorDals;
 import com.icalinks.jocyjt.R;
 import com.icalinks.mobile.ui.EditInsureActivity.InsureTypeInfo;
 import com.icalinks.mobile.ui.adapter.ServiceTypeAdapter;
@@ -48,10 +49,8 @@ public class EditRecordActivity extends BaseActivity {
 	private boolean isChargeWeiXiu, isChargeElse;
 	private EditText edtCharge, edtDistance;
 	private ServiceInfo mEditServiceInfo;
-	private String mChargeType = "";
 	private TextView tvServiceContent;
 	
-	private String strContent = "保养内容 2,保养内容 5";
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -85,8 +84,10 @@ public class EditRecordActivity extends BaseActivity {
 		
 	}
 	
+	private boolean isEdit;
 	private void initData() {
 		if(mEditServiceInfo != null){
+			isEdit = true;
 			edtCharge.setText(mEditServiceInfo.getPrice());
 			edtDistance.setText(mEditServiceInfo.getDistance());
 			String sChargeType= mEditServiceInfo.getChargeType();
@@ -240,6 +241,12 @@ public class EditRecordActivity extends BaseActivity {
 	
 
 	private void submit(ServiceInfo serviceInfo) {
+		if(isEdit){
+			DoctorDals.getInstance(mContext).insertConsumRecord(serviceInfo);
+		}else{
+			DoctorDals.getInstance(mContext).updateConsumRecord(serviceInfo);
+		}
+		
 		showLoadingDialog();
 		OBDHelper.editServiceInfo(serviceInfo, new OnCallbackListener() {
 			
