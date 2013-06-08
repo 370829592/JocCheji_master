@@ -45,6 +45,7 @@ public class DoctorDals {
 		values.put("money", info.getPrice());
 		values.put("miles", info.getDistance());
 		values.put("content",  info.getTypeName());
+		values.put("charge_type",  info.getChargeType());
 		SQLiteDatabase db = mHelper.getWritableDatabase();
 		db.insert(DBConfig.TABLE_NAME_4, null, values);
 		db.close();
@@ -62,6 +63,7 @@ public class DoctorDals {
 		values.put("money", info.getPrice());
 		values.put("miles", info.getDistance());
 		values.put("content",  info.getTypeName());
+		values.put("charge_type",  info.getChargeType());
 		db.update(DBConfig.TABLE_NAME_4, values, "_id=?", new String[]{info.getVid()+""});
 		db.close();
 	}
@@ -86,7 +88,7 @@ public class DoctorDals {
 		ArrayList<ServiceInfo> list = new ArrayList<ServiceInfo>();
 		SQLiteDatabase db = mHelper.getReadableDatabase();
 		Cursor c = db.query(DBConfig.TABLE_NAME_4, null, null, null, null, null, "_id desc");
-		if(c.getCount()<=0)return null;
+		if(c.getCount()<=0)return list;
 		while(c.moveToNext()){
 			ServiceInfo newInfo = new ServiceInfo();
 			newInfo.setVid(c.getInt(c.getColumnIndex("_id")));
@@ -94,6 +96,7 @@ public class DoctorDals {
 			newInfo.setPrice(c.getString(c.getColumnIndex("money")));
 			newInfo.setDistance(c.getString(c.getColumnIndex("miles")));
 			newInfo.setTypeName(c.getString(c.getColumnIndex("content")));
+			newInfo.setChargeType(c.getString(c.getColumnIndex("charge_type")));
 			list.add(newInfo);
 		}
 		c.close();

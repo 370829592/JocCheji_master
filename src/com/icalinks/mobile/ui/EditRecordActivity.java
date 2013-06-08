@@ -1,9 +1,12 @@
 package com.icalinks.mobile.ui;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 import com.calinks.vehiclemachine.model.db.dal.DoctorDals;
+import com.icalinks.common.MParams;
 import com.icalinks.jocyjt.R;
 import com.icalinks.mobile.ui.EditInsureActivity.InsureTypeInfo;
 import com.icalinks.mobile.ui.adapter.ServiceTypeAdapter;
@@ -47,7 +50,7 @@ public class EditRecordActivity extends BaseActivity {
 	private List<ServiceTypeInfo> mServiceTypeList;
 	private View vChargeWeiXiu, vChargeElse;
 	private boolean isChargeWeiXiu, isChargeElse;
-	private EditText edtCharge, edtDistance;
+	private EditText edtCharge, edtDistance;//消费金额、消费公里数
 	private ServiceInfo mEditServiceInfo;
 	private TextView tvServiceContent;
 	
@@ -103,20 +106,14 @@ public class EditRecordActivity extends BaseActivity {
 					vChargeElse.setSelected(isChargeElse);
 				}
 			}
+		}else{
+			isEdit = false;
 		}
 		
 		mServiceTypeList = new ArrayList<ServiceTypeInfo>();
 		mTypeAdapter = new ServiceTypeAdapter(mContext);
 		mTypeListView.setAdapter(mTypeAdapter);
 		
-//		for(int i=0; i<10; i++){
-//			ServiceTypeInfo type = new ServiceTypeInfo();
-//			type.setTypeId(i+"");
-//			type.setTypeName("保养内容 " +i);
-//			type.setSelected(strContent.contains(type.getTypeName()));
-//
-//			//mServiceTypeList.add(type);
-//		}
 		tvServiceContent.setText(mServiceTypeList.size()+"项  保养内容  可选择");
 		mTypeAdapter.setDataList(mServiceTypeList);
 		
@@ -185,7 +182,7 @@ public class EditRecordActivity extends BaseActivity {
 				StringBuffer sb = new StringBuffer("");
 				for(ServiceTypeInfo typeInfo: mServiceTypeList){
 					if(typeInfo.isSelected){
-						sb.append(typeInfo.getTypeId());
+						sb.append(typeInfo.getTypeName());
 						sb.append(";");
 					}
 				}
@@ -194,6 +191,8 @@ public class EditRecordActivity extends BaseActivity {
 					sChargeType = "1";
 					sbStr = sbStr.substring(0, sbStr.length()-1);
 				}
+				
+				
 				if(sbStr.equals("") && !isChargeWeiXiu && !isChargeElse){
 					Toast.makeText(mContext, "至少选择一项消费内容",Toast.LENGTH_SHORT).show();
 					return;
@@ -227,9 +226,9 @@ public class EditRecordActivity extends BaseActivity {
 				}
 				serviceInfo.setPrice(strEdtChange);
 				serviceInfo.setDistance(strEdtDistance);
-				serviceInfo.setTypeId(sbStr);
+				serviceInfo.setTypeName(sbStr.toString());
 				serviceInfo.setChargeType(sChargeType);
-				
+				serviceInfo.setServiceDate(new SimpleDateFormat("yyyy-MM-dd").format(new Date()));
 				submit(serviceInfo);
 				break;
 			default:
@@ -241,59 +240,85 @@ public class EditRecordActivity extends BaseActivity {
 	
 
 	private void submit(ServiceInfo serviceInfo) {
-		if(isEdit){
+		if(!isEdit){
 			DoctorDals.getInstance(mContext).insertConsumRecord(serviceInfo);
+			Toast.makeText(mContext, "新增消费记录成功", Toast.LENGTH_SHORT).show();
+			finish();
 		}else{
 			DoctorDals.getInstance(mContext).updateConsumRecord(serviceInfo);
+			Toast.makeText(mContext, "更新消费记录成功", Toast.LENGTH_SHORT).show();
+			finish();
 		}
 		
-		showLoadingDialog();
-		OBDHelper.editServiceInfo(serviceInfo, new OnCallbackListener() {
-			
-			@Override
-			public void onSuccess(Result result) {
-				Toast.makeText(mContext, result.head.resMsg, Toast.LENGTH_SHORT).show();
-				disLoadingDialog();
-				finish();
-			}
-			
-			@Override
-			public void onFailure(Result result) {
-				disLoadingDialog();
-				Toast.makeText(mContext, result.head.resMsg, Toast.LENGTH_SHORT).show();
-			}
-		});
+//		showLoadingDialog();
+//		OBDHelper.editServiceInfo(serviceInfo, new OnCallbackListener() {
+//			
+//			@Override
+//			public void onSuccess(Result result) {
+//				Toast.makeText(mContext, result.head.resMsg, Toast.LENGTH_SHORT).show();
+//				disLoadingDialog();
+//				finish();
+//			}
+//			
+//			@Override
+//			public void onFailure(Result result) {
+//				disLoadingDialog();
+//				Toast.makeText(mContext, result.head.resMsg, Toast.LENGTH_SHORT).show();
+//			}
+//		});
 	}
 	
 	//获取保养内容列表
 	private void getServiceTypeFromServer() {
-		OBDHelper.getServiceTypeList(new OnCallbackListener() {	
-			@SuppressWarnings("unchecked")
-			@Override
-			public void onSuccess(Result result) {
-				if(result.head.resCode == 0){
-					List<ServiceType> resDataList = (List<ServiceType>) result.object;
-					if(resDataList != null && mEditServiceInfo != null){
-						mServiceTypeList.clear();
-						String strTypeName = mEditServiceInfo.getTypeName()+"";
-						for(ServiceType type:resDataList){
-							ServiceTypeInfo typeInfo = new ServiceTypeInfo();
-							typeInfo.setTypeId(type.getTypeId());
-							typeInfo.setTypeName(type.getTypeName());
-							typeInfo.setSelected(strTypeName.contains(type.getTypeName()));
-							mServiceTypeList.add(typeInfo);
-						}
-						tvServiceContent.setText(mServiceTypeList.size()+"项  保养内容  可选择");
-						mTypeAdapter.notifyDataSetChanged();
-					}
-				}
+		List<ServiceType> resDataList = new ArrayList<ServiceType>();
+		for(int i = 0;i<MParams.CONSUM_RECORD_LIST.length;i++){
+			ServiceType type = new ServiceType();
+			type.setTypeId((i+1)+"");
+			type.setTypeName(MParams.CONSUM_RECORD_LIST[i]);
+			resDataList.add(type);
+		}
+		if(resDataList != null && mEditServiceInfo != null){
+			mServiceTypeList.clear();
+			String strTypeName = mEditServiceInfo.getTypeName()+"";
+			for(ServiceType type:resDataList){
+				ServiceTypeInfo typeInfo = new ServiceTypeInfo();
+				typeInfo.setTypeId(type.getTypeId());
+				typeInfo.setTypeName(type.getTypeName());
+				typeInfo.setSelected(strTypeName.contains(type.getTypeName()));
+				mServiceTypeList.add(typeInfo);
 			}
-			
-			@Override
-			public void onFailure(Result result) {
-				Toast.makeText(mContext, "获取保养内容列表失败", Toast.LENGTH_SHORT).show();
-			}
-		});
+			tvServiceContent.setText(mServiceTypeList.size()+"项  保养内容  可选择");
+			mTypeAdapter.notifyDataSetChanged();
+		}
+		
+		
+//		OBDHelper.getServiceTypeList(new OnCallbackListener() {	
+//			@SuppressWarnings("unchecked")
+//			@Override
+//			public void onSuccess(Result result) {
+//				if(result.head.resCode == 0){
+//					List<ServiceType> resDataList = (List<ServiceType>) result.object;
+//					if(resDataList != null && mEditServiceInfo != null){
+//						mServiceTypeList.clear();
+//						String strTypeName = mEditServiceInfo.getTypeName()+"";
+//						for(ServiceType type:resDataList){
+//							ServiceTypeInfo typeInfo = new ServiceTypeInfo();
+//							typeInfo.setTypeId(type.getTypeId());
+//							typeInfo.setTypeName(type.getTypeName());
+//							typeInfo.setSelected(strTypeName.contains(type.getTypeName()));
+//							mServiceTypeList.add(typeInfo);
+//						}
+//						tvServiceContent.setText(mServiceTypeList.size()+"项  保养内容  可选择");
+//						mTypeAdapter.notifyDataSetChanged();
+//					}
+//				}
+//			}
+//			
+//			@Override
+//			public void onFailure(Result result) {
+//				
+//			}
+//		});
 	}
 	
 	public static class ServiceTypeInfo extends ServiceType {

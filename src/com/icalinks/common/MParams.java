@@ -24,4 +24,13 @@ public class MParams {
 	public static final int MS_YJDH = 15;
 	public static final int MS_XXZX = 16;
 	public static final int MS_CXBX = 17;
+	
+	
+	public static final String[] CONSUM_RECORD_LIST = {
+		"更换机油","检查油水","整车打蜡","内饰清洁","蜡水洗车",
+		"润滑电瓶电极及四门两盖铰链","检查车轮和制动系统","检查底盘","检查灯光、仪表及控制面板","更换正时皮带(V6车型)",
+		"更换发动机冷却液","检查传动皮带和水泵","检查制动液","检查传动皮带","检查气门间隙/传动带/正时链条",
+		"检查火花塞","检查火花塞(裱金)","更换火花塞(普通)","更换燃油滤清器","更换手动/自动变速箱",
+		"更换空气滤清器滤芯",	"更换空调滤清器滤芯","更换放油螺栓垫片","更换机油滤清器"
+	};
 }

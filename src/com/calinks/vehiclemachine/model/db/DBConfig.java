@@ -35,7 +35,8 @@ public class DBConfig {
 			"date text," + 
 			"money text," +
 			"miles text," +
-			"content text" +
+			"content text," +
+			"charge_type text" +
 			");";
 	
 	public static final String THE_FIRST_INSERT_INTO_TABLE_3 = "insert into "+TABLE_NAME_3+" values(" +
